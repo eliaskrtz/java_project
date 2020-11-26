@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class shelf here.
+ * interacting with this : extra menu to change characters clothes
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * 
+ * 
  */
 public class shelf extends wardrobe_objects
 {
