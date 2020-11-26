@@ -5,7 +5,7 @@ all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
 PROJECT TITLE: CASTLESIDE
-PURPOSE OF PROJECT:
+PURPOSE OF PROJECT: PROGRAMM GAME
 VERSION or DATE:
 HOW TO START THIS PROJECT:
 AUTHORS:
