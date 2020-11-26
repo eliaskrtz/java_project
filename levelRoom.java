@@ -17,12 +17,14 @@ public class levelRoom extends World
     {   
         super(1280, 720, 1); 
         setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+        //Aussenwände
         addObject(new mainChar(), 1280/2, 720/2);
         addObject(new wallV(), 1250, 720/2);
         addObject(new wallV(), 29, 720/2);
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
-        addObject(new wallWardH(), 1280 / 2 + 482 , 720 / 2 + 70);
-        addObject(new wallWardV(), 158, 720 / 2 + 150);
+        //Innenwände der Garderobe
+        addObject(new wallH(280, 50), 1083 , 430);
+        addObject(new wallV(50, 300), 957, 555);
     }
 }
