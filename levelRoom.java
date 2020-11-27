@@ -24,7 +24,12 @@ public class levelRoom extends World
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
         //Innenwände der Garderobe
-        addObject(new wallH(280, 50), 1083 , 430);
-        addObject(new wallV(50, 300), 957, 555);
+        addObject(new wallH(280, 30), 1083 , 430);
+        addObject(new wallV(30, 300), 950, 565);
+        addObject(new wardrobe_door(30, 100), 950, 547);
+        addObject(new door_lv1(60, 100), 30, 305);
+        addObject(new door_lv2(60, 100), 30, 127);
+        addObject(new door_lv3(60, 100), 1251, 305);
+        addObject(new door_lv4(60, 100), 1251, 127);
     }
 }
