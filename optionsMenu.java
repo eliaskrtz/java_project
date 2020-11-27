@@ -16,6 +16,7 @@ public class optionsMenu extends World
     public optionsMenu()
     {    
        super(1280, 720, 1);
-      addObject(new backButton(), 1280/2 - 500, 720/2 + 270);
+       setBackground(new GreenfootImage("greyBG.jpg"));
+       addObject(new backButton(), 200, 650);
     }
 }

@@ -12,7 +12,7 @@ public class mainChar extends Actor
      * Act - do whatever the mainChar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+
     public void act() 
     {
         movements();
@@ -61,11 +61,12 @@ public class mainChar extends Actor
      setLocation(x + 1, y);
     }
     }
+    }
     if(Greenfoot.isKeyDown("escape")){
      World Menu = new mainMenu();
      Greenfoot.setWorld(Menu);
     }
-    }
+    
    }
     public void clothes() {
         int hat = 0;
