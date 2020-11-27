@@ -21,6 +21,7 @@ dependency14.type=UsesDependency
 dependency15.from=wardrobe
 dependency15.to=lobby_door
 dependency15.type=UsesDependency
+<<<<<<< HEAD
 dependency16.from=wardrobe_door
 dependency16.to=wardrobe
 dependency16.type=UsesDependency
@@ -32,6 +33,19 @@ dependency18.to=walls
 dependency18.type=UsesDependency
 dependency19.from=startButton
 dependency19.to=levelRoom
+=======
+dependency16.from=mainChar
+dependency16.to=mainMenu
+dependency16.type=UsesDependency
+dependency17.from=startButton
+dependency17.to=levelRoom
+dependency17.type=UsesDependency
+dependency18.from=backButton
+dependency18.to=mainMenu
+dependency18.type=UsesDependency
+dependency19.from=optionsButton
+dependency19.to=optionsMenu
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
 dependency19.type=UsesDependency
 dependency2.from=mainMenu
 dependency2.to=optionsButton
@@ -63,12 +77,21 @@ dependency8.type=UsesDependency
 dependency9.from=levelRoom
 dependency9.to=door_lv2
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1199
 editor.fx.0.width=1563
 editor.fx.0.x=360
 editor.fx.0.y=26
 height=1414
 package.numDependencies=21
+=======
+editor.fx.0.height=1066
+editor.fx.0.width=1936
+editor.fx.0.x=1912
+editor.fx.0.y=-8
+height=28
+package.numDependencies=19
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
 package.numTargets=24
 project.charset=UTF-8
 publish.hasSource=false
@@ -228,7 +251,7 @@ target6.height=50
 target6.name=lobby_door
 target6.showInterface=false
 target6.type=ClassTarget
-target6.width=100
+target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
@@ -253,7 +276,12 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=2574
 world.lastInstantiated=levelRoom
+=======
+width=160
+world.lastInstantiated=wardrobe
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
 xPosition=0
 yPosition=0
