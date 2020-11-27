@@ -13,16 +13,22 @@ public class lobby_door extends Doors
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    
+    
     public lobby_door(int laenge, int breite) {
        setImage("redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
        setImage(image);
+       
     }
     
     public void act() 
     {
-        // Add your action code here.
+        if(getOneObjectAtOffset(15, 15, lobby_door.class) == null && Greenfoot.isKeyDown("e")){
+        World lobby = new levelRoom();
+        Greenfoot.setWorld(lobby); 
+    }
     }    
 }
