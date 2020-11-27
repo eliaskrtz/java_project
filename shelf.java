@@ -13,16 +13,19 @@ public class shelf extends wardrobe_objects
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public shelf() {
+    public shelf(int laenge, int breite) {
        setImage("schrankWD.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
-       image.scale(60, 100);
+       image.scale(laenge, breite);
        setImage(image);
     }
     
     public void act() 
     {
-        // Add your action code here.
+        if(getOneObjectAtOffset(15, 15, shelf.class) == null && Greenfoot.isKeyDown("e")){
+        World cmenu = new clothMenu();
+        Greenfoot.setWorld(cmenu); 
+    }
     }    
 }
