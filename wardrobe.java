@@ -17,9 +17,8 @@ public class wardrobe extends World
     {    
         super(1280, 720, 1); 
         setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
-        addObject(new mainChar(), 1280/2, 720/2);
+        addObject(new mainChar(), 74, 343);
         //Aussenwände
-        addObject(new mainChar(), 1280/2, 720/2);
         addObject(new wallV(60, 720), 748, 363);
         addObject(new wallV(60, 720), 29, 720/2);
         addObject(new wallH(720, 60), 382 , 690);
