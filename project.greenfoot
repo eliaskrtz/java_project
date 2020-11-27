@@ -13,6 +13,7 @@ dependency11.type=UsesDependency
 dependency12.from=levelRoom
 dependency12.to=wallH
 dependency12.type=UsesDependency
+<<<<<<< HEAD
 dependency13.from=levelRoom
 dependency13.to=wardrobe_door
 dependency13.type=UsesDependency
@@ -33,10 +34,47 @@ dependency18.to=mainChar
 dependency18.type=UsesDependency
 dependency19.from=level1
 dependency19.to=wallV
+=======
+dependency13.from=wardrobe
+dependency13.to=wallV
+dependency13.type=UsesDependency
+dependency14.from=wardrobe
+dependency14.to=wallH
+dependency14.type=UsesDependency
+dependency15.from=wardrobe
+dependency15.to=lobby_door
+dependency15.type=UsesDependency
+<<<<<<< HEAD
+dependency16.from=wardrobe_door
+dependency16.to=wardrobe
+dependency16.type=UsesDependency
+dependency17.from=mainChar
+dependency17.to=mainMenu
+dependency17.type=UsesDependency
+dependency18.from=mainChar
+dependency18.to=walls
+dependency18.type=UsesDependency
+dependency19.from=startButton
+dependency19.to=levelRoom
+=======
+dependency16.from=mainChar
+dependency16.to=mainMenu
+dependency16.type=UsesDependency
+dependency17.from=startButton
+dependency17.to=levelRoom
+dependency17.type=UsesDependency
+dependency18.from=backButton
+dependency18.to=mainMenu
+dependency18.type=UsesDependency
+dependency19.from=optionsButton
+dependency19.to=optionsMenu
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 dependency19.type=UsesDependency
 dependency2.from=mainMenu
 dependency2.to=optionsButton
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=level3
 dependency20.to=mainChar
 dependency20.type=UsesDependency
@@ -69,6 +107,16 @@ dependency29.to=levelRoom
 dependency29.type=UsesDependency
 dependency3.from=wardrobe
 dependency3.to=mainChar
+=======
+dependency20.from=backButton
+dependency20.to=mainMenu
+dependency20.type=UsesDependency
+dependency21.from=optionsButton
+dependency21.to=optionsMenu
+dependency21.type=UsesDependency
+dependency3.from=optionsMenu
+dependency3.to=backButton
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 dependency3.type=UsesDependency
 dependency4.from=wardrobe
 dependency4.to=wallV
@@ -79,6 +127,7 @@ dependency5.type=UsesDependency
 dependency6.from=wardrobe
 dependency6.to=lobby_door
 dependency6.type=UsesDependency
+<<<<<<< HEAD
 dependency7.from=level4
 dependency7.to=mainChar
 dependency7.type=UsesDependency
@@ -95,6 +144,33 @@ editor.fx.0.y=56
 height=1176
 package.numDependencies=29
 package.numTargets=28
+=======
+dependency7.from=levelRoom
+dependency7.to=wardrobe_door
+dependency7.type=UsesDependency
+dependency8.from=levelRoom
+dependency8.to=door_lv1
+dependency8.type=UsesDependency
+dependency9.from=levelRoom
+dependency9.to=door_lv2
+dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=1199
+editor.fx.0.width=1563
+editor.fx.0.x=360
+editor.fx.0.y=26
+height=1414
+package.numDependencies=21
+=======
+editor.fx.0.height=1066
+editor.fx.0.width=1936
+editor.fx.0.x=1912
+editor.fx.0.y=-8
+height=28
+package.numDependencies=19
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
+package.numTargets=24
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -145,21 +221,33 @@ target13.width=80
 target13.x=0
 target13.y=0
 target14.height=50
+<<<<<<< HEAD
 target14.name=level4
+=======
+target14.name=startButton
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
+<<<<<<< HEAD
 target15.name=startButton
+=======
+target15.name=shelf
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
 target15.x=0
 target15.y=0
 target16.height=50
+<<<<<<< HEAD
 target16.name=shelf
+=======
+target16.name=door_lv1
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=80
@@ -173,17 +261,28 @@ target17.width=80
 target17.x=0
 target17.y=0
 target18.height=50
+<<<<<<< HEAD
 target18.name=door_lv2
+=======
+target18.name=wallV
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=80
 target18.x=0
 target18.y=0
 target19.height=50
+<<<<<<< HEAD
 target19.name=wallV
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=80
+=======
+target19.name=optionsMenu
+target19.showInterface=false
+target19.type=ClassTarget
+target19.width=110
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target19.x=0
 target19.y=0
 target2.height=50
@@ -194,6 +293,7 @@ target2.width=80
 target2.x=0
 target2.y=0
 target20.height=50
+<<<<<<< HEAD
 target20.name=optionsMenu
 target20.showInterface=false
 target20.type=ClassTarget
@@ -209,13 +309,34 @@ target21.x=0
 target21.y=0
 target22.height=50
 target22.name=wardrobe_objects
+=======
+target20.name=levelRoom
+target20.showInterface=false
+target20.type=ClassTarget
+target20.width=80
+target20.x=0
+target20.y=0
+target21.height=50
+target21.name=wardrobe_objects
+target21.showInterface=false
+target21.type=ClassTarget
+target21.width=140
+target21.x=0
+target21.y=0
+target22.height=50
+target22.name=Buttons
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=140
 target22.x=0
 target22.y=0
 target23.height=50
+<<<<<<< HEAD
 target23.name=Buttons
+=======
+target23.name=door_lv3
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=80
@@ -281,7 +402,7 @@ target6.height=50
 target6.name=lobby_door
 target6.showInterface=false
 target6.type=ClassTarget
-target6.width=100
+target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
@@ -306,7 +427,17 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
 width=1936
 world.lastInstantiated=wardrobe
+=======
+<<<<<<< HEAD
+width=2574
+world.lastInstantiated=levelRoom
+=======
+width=160
+world.lastInstantiated=wardrobe
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
+>>>>>>> 708dea2232e8d59182f435c0437438487c89bade
 xPosition=0
 yPosition=0
