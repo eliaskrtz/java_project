@@ -3,7 +3,6 @@ class.mainChar.image=man.png
 dependency1.from=mainMenu
 dependency1.to=startButton
 dependency1.type=UsesDependency
-<<<<<<< HEAD
 dependency10.from=levelRoom
 dependency10.to=door_lv3
 dependency10.type=UsesDependency
@@ -13,38 +12,50 @@ dependency11.type=UsesDependency
 dependency12.from=wardrobe
 dependency12.to=mainChar
 dependency12.type=UsesDependency
-dependency13.from=mainChar
-dependency13.to=mainMenu
+dependency13.from=wardrobe
+dependency13.to=wallV
 dependency13.type=UsesDependency
-dependency14.from=startButton
-dependency14.to=levelRoom
+dependency14.from=wardrobe
+dependency14.to=wallH
 dependency14.type=UsesDependency
-dependency15.from=backButton
-dependency15.to=mainMenu
+dependency15.from=wardrobe
+dependency15.to=lobby_door
 dependency15.type=UsesDependency
-dependency16.from=optionsButton
-dependency16.to=optionsMenu
+<<<<<<< HEAD
+dependency16.from=wardrobe_door
+dependency16.to=wardrobe
 dependency16.type=UsesDependency
+dependency17.from=mainChar
+dependency17.to=mainMenu
+dependency17.type=UsesDependency
+dependency18.from=mainChar
+dependency18.to=walls
+dependency18.type=UsesDependency
+dependency19.from=startButton
+dependency19.to=levelRoom
 =======
-dependency10.from=wardrobe
-dependency10.to=lobby_door
-dependency10.type=UsesDependency
-dependency11.from=mainChar
-dependency11.to=mainMenu
-dependency11.type=UsesDependency
-dependency12.from=startButton
-dependency12.to=levelRoom
-dependency12.type=UsesDependency
-dependency13.from=backButton
-dependency13.to=mainMenu
-dependency13.type=UsesDependency
-dependency14.from=optionsButton
-dependency14.to=optionsMenu
-dependency14.type=UsesDependency
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
+dependency16.from=mainChar
+dependency16.to=mainMenu
+dependency16.type=UsesDependency
+dependency17.from=startButton
+dependency17.to=levelRoom
+dependency17.type=UsesDependency
+dependency18.from=backButton
+dependency18.to=mainMenu
+dependency18.type=UsesDependency
+dependency19.from=optionsButton
+dependency19.to=optionsMenu
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
+dependency19.type=UsesDependency
 dependency2.from=mainMenu
 dependency2.to=optionsButton
 dependency2.type=UsesDependency
+dependency20.from=backButton
+dependency20.to=mainMenu
+dependency20.type=UsesDependency
+dependency21.from=optionsButton
+dependency21.to=optionsMenu
+dependency21.type=UsesDependency
 dependency3.from=optionsMenu
 dependency3.to=backButton
 dependency3.type=UsesDependency
@@ -57,7 +68,6 @@ dependency5.type=UsesDependency
 dependency6.from=levelRoom
 dependency6.to=wallH
 dependency6.type=UsesDependency
-<<<<<<< HEAD
 dependency7.from=levelRoom
 dependency7.to=wardrobe_door
 dependency7.type=UsesDependency
@@ -67,31 +77,22 @@ dependency8.type=UsesDependency
 dependency9.from=levelRoom
 dependency9.to=door_lv2
 dependency9.type=UsesDependency
-editor.fx.0.height=725
-editor.fx.0.width=802
-editor.fx.0.x=392
-editor.fx.0.y=118
-height=879
-package.numDependencies=16
-package.numTargets=23
+<<<<<<< HEAD
+editor.fx.0.height=1199
+editor.fx.0.width=1563
+editor.fx.0.x=360
+editor.fx.0.y=26
+height=1414
+package.numDependencies=21
 =======
-dependency7.from=wardrobe
-dependency7.to=mainChar
-dependency7.type=UsesDependency
-dependency8.from=wardrobe
-dependency8.to=wallV
-dependency8.type=UsesDependency
-dependency9.from=wardrobe
-dependency9.to=wallH
-dependency9.type=UsesDependency
-editor.fx.0.height=725
-editor.fx.0.width=802
-editor.fx.0.x=496
-editor.fx.0.y=56
-height=872
-package.numDependencies=14
+editor.fx.0.height=1066
+editor.fx.0.width=1936
+editor.fx.0.x=1912
+editor.fx.0.y=-8
+height=28
+package.numDependencies=19
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
 package.numTargets=24
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -114,37 +115,6 @@ target1.width=80
 target1.x=0
 target1.y=0
 target10.height=50
-<<<<<<< HEAD
-target10.name=wallV
-target10.showInterface=false
-target10.type=ClassTarget
-target10.width=80
-target10.x=0
-target10.y=0
-target11.height=50
-target11.name=optionsMenu
-target11.showInterface=false
-target11.type=ClassTarget
-target11.width=110
-target11.x=0
-target11.y=0
-target12.height=50
-target12.name=Doors
-target12.showInterface=false
-target12.type=ClassTarget
-target12.width=80
-target12.x=0
-target12.y=0
-target13.height=50
-target13.name=wardrobe_objects
-target13.showInterface=false
-target13.type=ClassTarget
-target13.width=140
-target13.x=0
-target13.y=0
-target14.height=50
-target14.name=mainChar
-=======
 target10.name=optionsButton
 target10.showInterface=false
 target10.type=ClassTarget
@@ -152,17 +122,17 @@ target10.width=120
 target10.x=0
 target10.y=0
 target11.height=50
-target11.name=wardrobe
+target11.name=levelRoom_objects
 target11.showInterface=false
 target11.type=ClassTarget
-target11.width=90
+target11.width=150
 target11.x=0
 target11.y=0
 target12.height=50
-target12.name=levelRoom_objects
+target12.name=wardrobe
 target12.showInterface=false
 target12.type=ClassTarget
-target12.width=150
+target12.width=90
 target12.x=0
 target12.y=0
 target13.height=50
@@ -174,41 +144,19 @@ target13.x=0
 target13.y=0
 target14.height=50
 target14.name=startButton
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=80
 target14.x=0
 target14.y=0
 target15.height=50
-<<<<<<< HEAD
-target15.name=levelRoom
-=======
 target15.name=shelf
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=80
 target15.x=0
 target15.y=0
 target16.height=50
-<<<<<<< HEAD
-target16.name=backButton
-target16.showInterface=false
-target16.type=ClassTarget
-target16.width=100
-target16.x=0
-target16.y=0
-target17.height=50
-target17.name=optionsButton
-target17.showInterface=false
-target17.type=ClassTarget
-target17.width=120
-target17.x=0
-target17.y=0
-target18.height=50
-target18.name=Buttons
-=======
 target16.name=door_lv1
 target16.showInterface=false
 target16.type=ClassTarget
@@ -224,23 +172,12 @@ target17.x=0
 target17.y=0
 target18.height=50
 target18.name=wallV
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=80
 target18.x=0
 target18.y=0
 target19.height=50
-<<<<<<< HEAD
-target19.name=wardrobe
-target19.showInterface=false
-target19.type=ClassTarget
-target19.width=90
-target19.x=0
-target19.y=0
-target2.height=50
-target2.name=mainMenu
-=======
 target19.name=optionsMenu
 target19.showInterface=false
 target19.type=ClassTarget
@@ -248,31 +185,13 @@ target19.width=110
 target19.x=0
 target19.y=0
 target2.height=50
-target2.name=wallH
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
+target2.name=mainMenu
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target20.height=50
-<<<<<<< HEAD
-target20.name=levelRoom_objects
-target20.showInterface=false
-target20.type=ClassTarget
-target20.width=150
-target20.x=0
-target20.y=0
-target21.height=50
-target21.name=table
-target21.showInterface=false
-target21.type=ClassTarget
-target21.width=80
-target21.x=0
-target21.y=0
-target22.height=50
-target22.name=door_lv3
-=======
 target20.name=levelRoom
 target20.showInterface=false
 target20.type=ClassTarget
@@ -288,27 +207,18 @@ target21.x=0
 target21.y=0
 target22.height=50
 target22.name=Buttons
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=80
 target22.x=0
 target22.y=0
 target23.height=50
-<<<<<<< HEAD
-target23.name=door_lv4
-=======
 target23.name=door_lv3
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=80
 target23.x=0
 target23.y=0
-<<<<<<< HEAD
-target3.height=50
-target3.name=wallH
-=======
 target24.height=50
 target24.name=door_lv4
 target24.showInterface=false
@@ -317,24 +227,13 @@ target24.width=80
 target24.x=0
 target24.y=0
 target3.height=50
-target3.name=mainMenu
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
+target3.name=wallH
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-<<<<<<< HEAD
-target4.name=startButton
-target4.showInterface=false
-target4.type=ClassTarget
-target4.width=80
-target4.x=0
-target4.y=0
-target5.height=50
-target5.name=shelf
-=======
 target4.name=wardrobe_door
 target4.showInterface=false
 target4.type=ClassTarget
@@ -343,48 +242,26 @@ target4.x=0
 target4.y=0
 target5.height=50
 target5.name=walls
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
-<<<<<<< HEAD
-target6.name=wardrobe_door
-target6.showInterface=false
-target6.type=ClassTarget
-target6.width=120
-target6.x=0
-target6.y=0
-target7.height=50
-target7.name=door_lv1
-=======
 target6.name=lobby_door
 target6.showInterface=false
 target6.type=ClassTarget
-target6.width=100
+target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
 target7.name=Doors
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
 target7.x=0
 target7.y=0
 target8.height=50
-<<<<<<< HEAD
-target8.name=door_lv2
-target8.showInterface=false
-target8.type=ClassTarget
-target8.width=80
-target8.x=0
-target8.y=0
-target9.height=50
-target9.name=walls
-=======
 target8.name=backButton
 target8.showInterface=false
 target8.type=ClassTarget
@@ -393,18 +270,18 @@ target8.x=0
 target8.y=0
 target9.height=50
 target9.name=mainChar
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1440
 <<<<<<< HEAD
+width=2574
 world.lastInstantiated=levelRoom
 =======
+width=160
 world.lastInstantiated=wardrobe
->>>>>>> 3aa519b35c8ce901be2e249db67f9169dcca2c80
+>>>>>>> ea52ec833eb1f1eb876b8513ac9006fdb91186bf
 xPosition=0
 yPosition=0

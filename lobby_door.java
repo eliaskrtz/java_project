@@ -1,20 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class table here.
+ * Write a description of class lobby_door here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class table extends wardrobe_objects
+public class lobby_door extends Doors
 {
     /**
-     * Act - do whatever the table wants to do. This method is called whenever
+     * Act - do whatever the lobby_door wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public table(int laenge, int breite) {
-       setImage("schrankWD.jpg");
+    public lobby_door(int laenge, int breite) {
+       setImage("redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
