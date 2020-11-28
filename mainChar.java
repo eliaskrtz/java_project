@@ -17,6 +17,7 @@ public class mainChar extends Actor
     {
         movements();
         ward_door();
+        lob_door();
         door_lv1();
         door_lv2();
         door_lv3();
@@ -142,6 +143,18 @@ public class mainChar extends Actor
         }
     }  
     }
+    public void lob_door(){
+      List<lobby_door>objects = getObjectsInRange(100, lobby_door.class);
+      if( objects.isEmpty()){
+          
+    } 
+    else{
+     if(Greenfoot.isKeyDown("e")){
+         World lob = new levelRoom();
+        Greenfoot.setWorld(lob);
+        }
+    }  
+  }
 }
 
     

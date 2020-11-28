@@ -26,9 +26,6 @@ public class lobby_door extends Doors
     
     public void act() 
     {
-        if(getOneObjectAtOffset(15, 15, lobby_door.class) == null && Greenfoot.isKeyDown("e")){
-        World lobby = new levelRoom(902, 542);
-        Greenfoot.setWorld(lobby); 
-    }
+       
     }    
 }
