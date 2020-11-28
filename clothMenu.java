@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class clothMenu extends wardrobe
+public class clothMenu extends World
 {
 
     /**
@@ -14,7 +14,11 @@ public class clothMenu extends wardrobe
      * 
      */
     public clothMenu()
-    {
-        setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(720, 720, 1);
+        setBackground(new GreenfootImage("greyBG.jpg"));
+        addObject(new backgroundImage("lightgrey", 180, 180), 150, 720/2);
+        addObject(new mainChar("big"), 150, 720/2);
     }
 }
