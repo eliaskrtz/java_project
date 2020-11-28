@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
 /**
  * Write a description of class wardrobe_door here.
  * 
@@ -14,10 +14,6 @@ public class wardrobe_door extends Doors
      */
     public void act() 
     {
-      if(getOneObjectAtOffset(15, 15, wardrobe_door.class) == null && Greenfoot.isKeyDown("e")){
-        World ward = new wardrobe();
-        Greenfoot.setWorld(ward); 
-    }
         
     }   
     public wardrobe_door(int laenge, int breite) {
