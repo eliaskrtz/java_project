@@ -14,10 +14,7 @@ public class door_lv1 extends Doors
      */
     public void act() 
     {
-       // if(getOneObjectAtOffset(15, 15, door_lv1.class) == null && Greenfoot.isKeyDown("e")){
-        //World lvl1 = new level1();
-        //Greenfoot.setWorld(lvl1); 
-  //  }
+      
         
     } 
     public door_lv1(int laenge, int breite) {
