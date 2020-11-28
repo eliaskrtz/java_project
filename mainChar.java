@@ -12,7 +12,23 @@ public class mainChar extends Actor
      * Act - do whatever the mainChar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-
+    
+    public mainChar() {
+        setImage(new GreenfootImage("manNormal.jpg"));
+    }
+    
+    public mainChar(String art) {
+        if (art == "normal") {
+            setImage(new GreenfootImage("manNormal.jpg"));
+        }
+        if (art == "small") {
+            setImage(new GreenfootImage("manSmall.jpg"));
+        }
+        if (art == "big") {
+            setImage(new GreenfootImage("manBig.jpg"));
+        }
+    }
+    
     public void act() 
     {
         movements();
