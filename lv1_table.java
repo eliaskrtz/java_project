@@ -1,31 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lobby_door here.
+ * Write a description of class lv1_table here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class lobby_door extends Doors
+public class lv1_table extends lv1_objects
 {
     /**
-     * Act - do whatever the lobby_door wants to do. This method is called whenever
+     * Act - do whatever the lv1_table wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    
-    
-    public lobby_door(int laenge, int breite) {
-       setImage("redBG.jpg");
+    public void act() 
+    {
+     
+    } 
+    public lv1_table ( int laenge, int breite){
+      setImage("schrankWD.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
-       setImage(image);
-       
+       setImage(image);    
     }
-    
-    public void act() 
-    {
-       
-    }    
 }
