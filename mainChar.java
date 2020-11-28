@@ -150,7 +150,7 @@ public class mainChar extends Actor
     } 
     else{
      if(Greenfoot.isKeyDown("e")){
-         World lob = new levelRoom();
+         World lob = new levelRoom(898, 540);
         Greenfoot.setWorld(lob);
         }
     }  

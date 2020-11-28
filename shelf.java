@@ -23,9 +23,7 @@ public class shelf extends wardrobe_objects
     
     public void act() 
     {
-        if(getOneObjectAtOffset(15, 15, shelf.class) == null && Greenfoot.isKeyDown("e")){
-        World cmenu = new clothMenu();
-        Greenfoot.setWorld(cmenu); 
+        
     }
-    }    
+      
 }
