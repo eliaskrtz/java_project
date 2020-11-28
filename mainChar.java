@@ -58,7 +58,7 @@ public class mainChar extends Actor
         int rot = getRotation();
         int x = getX();
         int y = getY();
-     if (getOneObjectAtOffset(30, 0, walls.class) == null) {    
+     if (getOneObjectAtOffset(30, 0, walls.class) == null ) {    
         if( rot == 180 ){
             setRotation(0);
             getImage().mirrorVertically();
