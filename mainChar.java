@@ -12,7 +12,6 @@ public class mainChar extends Actor
      * Act - do whatever the mainChar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
     public mainChar() {
         setImage(new GreenfootImage("manNormal.jpg"));
     }
@@ -44,7 +43,7 @@ public class mainChar extends Actor
      int rot = getRotation();
      int x = getX();
      int y = getY();
-     if (getOneObjectAtOffset(-30, 0, walls.class) == null) {
+     if (getOneObjectAtOffset(-30, 0, walls.class) == null ) {
         if( rot == 0 ){
             setRotation(180);
             getImage().mirrorVertically();
@@ -57,7 +56,7 @@ public class mainChar extends Actor
     if( Greenfoot.isKeyDown("w")){
         int y = getY();
         int x = getX();
-         if (getOneObjectAtOffset(0, - 35, walls.class) == null) {
+         if (getOneObjectAtOffset(0, - 35, walls.class) == null  ) {
         setLocation(x, y - 2);
          
         }
@@ -65,7 +64,7 @@ public class mainChar extends Actor
     if( Greenfoot.isKeyDown("s")){
        int y = getY();
        int x = getX();
-    if (getOneObjectAtOffset(0, 35, walls.class) == null) {
+    if (getOneObjectAtOffset(0, 35, walls.class) == null ) {
        setLocation(x, y + 2);
      
         }
@@ -172,6 +171,5 @@ public class mainChar extends Actor
     }  
   }
 }
-
     
 
