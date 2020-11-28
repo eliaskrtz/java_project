@@ -1,27 +1,26 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class door_lv1 here.
+ * Write a description of class lv1_crown_chair here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class door_lv1 extends Doors
+public class lv1_crown_chair extends lv1_objects
 {
     /**
-     * Act - do whatever the door_lv1 wants to do. This method is called whenever
+     * Act - do whatever the lv1_crown_chair wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-      
-        
-    } 
-    public door_lv1(int laenge, int breite) {
-       setImage("redBG.jpg");
-       setRotation(0);
+       
+    }   
+    public lv1_crown_chair (int laenge, int breite){
+     setImage("crown.jpg"); 
+      setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
-       setImage(image);
+       setImage(image); 
     }
 }
