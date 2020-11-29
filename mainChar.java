@@ -16,11 +16,11 @@ public class mainChar extends Actor
     public String size = ""; //Variable für mainChar erstellung (klein/normal/groß)
     public mainChar() {
         setImage(new GreenfootImage("manNormal.jpg"));
-        String size = "normal";
+        size = "normal";
     }
     
     public mainChar(String art) {
-        String size = art;               //wichtig für mainChar erstellung
+        size = art;               //wichtig für mainChar erstellung
         if (size == "normal") {
             setImage(new GreenfootImage("manNormal.jpg"));
         }
