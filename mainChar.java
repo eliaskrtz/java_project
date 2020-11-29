@@ -12,25 +12,31 @@ public class mainChar extends Actor
      * Act - do whatever the mainChar wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    public String size = ""; //Variable für mainChar erstellung (klein/normal/groß)
     public mainChar() {
         setImage(new GreenfootImage("manNormal.jpg"));
+        String size = "normal";
     }
     
     public mainChar(String art) {
-        if (art == "normal") {
+        String size = art;               //wichtig für mainChar erstellung
+        if (size == "normal") {
             setImage(new GreenfootImage("manNormal.jpg"));
         }
-        if (art == "small") {
+        if (size == "small") {
             setImage(new GreenfootImage("manSmall.jpg"));
         }
-        if (art == "big") {
+        if (size == "big") {
             setImage(new GreenfootImage("manBig.jpg"));
         }
     }
     
     public void act() 
     {
-        movements();
+        if (size == "normal"){
+            movements();
+        }
         ward_door();
         lob_door();
         door_lv1();
