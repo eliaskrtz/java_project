@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.Color;
 /**
  * Write a description of class lv1_Hint here.
  * 
@@ -19,14 +19,12 @@ public class lv1_Hint extends level1
         setHint();
     }
     public Actor message = null;
-    public static final Color BLACK = schwarz;
-    public void setHint()
-    {
-    GreenfootImage image = null;
-    String text = "hint";
-    
-    image = new GreenfootImage(text, 28,schwarz,1280 / 2, 150);
-    message.setImage(image);
+    public static final Color BLACK;
+    public void setHint() {
+        GreenfootImage image = null;
+        String text = "hint";
+        image = new GreenfootImage(text, 28, /*color*/ 1280 / 2, 150);
+        message.setImage(image);
     }
  
 }
