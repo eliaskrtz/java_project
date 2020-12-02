@@ -13,83 +13,91 @@ public class mainChar extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    public String size = "";  //Variable für mainChar erstellung (klein/normal/groß)
+    
     public mainChar() {
+        setImage(new GreenfootImage("manNormal.jpg")); //createChar()
         setImage(new GreenfootImage("manNormal.jpg"));
+        size = "normal";
     }
     
     public mainChar(String art) {
-        if (art == "normal") {
-            setImage(new GreenfootImage("manNormal.jpg"));
+        size = art;               //wichtig für mainChar Erstellung
+        if (size == "normal") {
+            setImage(new GreenfootImage("manNormal.jpg")); //createChar()
         }
-        if (art == "small") {
-            setImage(new GreenfootImage("manSmall.jpg"));
+        if (size == "small") {
+            setImage(new GreenfootImage("manSmall.jpg")); //createChar()
         }
-        if (art == "big") {
-            setImage(new GreenfootImage("manBig.jpg"));
+        if (size == "big") {
+            setImage(new GreenfootImage("manBig.jpg")); //createChar()
         }
     }
     
     public void act() 
     {
-        movements();
+        //Abfrgae zur Größe des mainChars und deren movement
+        if (size == "normal"){
+            movements();
+        }
+        //Methoden fü den Türendurchlauf
         ward_door();
         lob_door();
         door_lv1();
         door_lv2();
         door_lv3();
         door_lv4();
-   }    
+    }    
+    
     public void movements() {
-    if(Greenfoot.isKeyDown("a")){
-     int rot = getRotation();
-     int x = getX();
-     int y = getY();
-     if (getOneObjectAtOffset(-30, 0, walls.class) == null) {
-        if( rot == 0 ){
-            setRotation(180);
-            getImage().mirrorVertically();
+        if(Greenfoot.isKeyDown("a")){
+            int rot = getRotation();
+            int x = getX();
+            int y = getY();
+            if (getOneObjectAtOffset(-30, 0, Actor.class) == null ) {
+                if( rot == 0 ){
+                    setRotation(180);
+                    getImage().mirrorVertically();
+                }
+                else{
+                    setLocation(x - 2, y);
+                }
+            }
         }
-        else{
-     setLocation(x - 2, y);
-    }
-    }
-    }
-    if( Greenfoot.isKeyDown("w")){
-        int y = getY();
-        int x = getX();
-         if (getOneObjectAtOffset(0, - 35, walls.class) == null) {
-        setLocation(x, y - 2);
-         
+        if( Greenfoot.isKeyDown("w")){
+            int y = getY();
+            int x = getX();
+            if (getOneObjectAtOffset(0, - 35, Actor.class) == null  ) {
+                setLocation(x, y - 2);
+            }
         }
-    }
-    if( Greenfoot.isKeyDown("s")){
-       int y = getY();
-       int x = getX();
-    if (getOneObjectAtOffset(0, 35, walls.class) == null) {
-       setLocation(x, y + 2);
-     
+        if( Greenfoot.isKeyDown("s")){
+            int y = getY();
+            int x = getX();
+            if (getOneObjectAtOffset(0, 35, Actor.class) == null ) {
+               setLocation(x, y + 2);
+            }
         }
-       }
-    if(Greenfoot.isKeyDown("d")){
-        int rot = getRotation();
-        int x = getX();
-        int y = getY();
-     if (getOneObjectAtOffset(30, 0, walls.class) == null ) {    
-        if( rot == 180 ){
-            setRotation(0);
-            getImage().mirrorVertically();
+        if(Greenfoot.isKeyDown("d")){
+            int rot = getRotation();
+            int x = getX();
+            int y = getY();
+            if (getOneObjectAtOffset(30, 0, Actor.class) == null ) {    
+                if( rot == 180 ){
+                    setRotation(0);
+                    getImage().mirrorVertically();
+                }
+                else{
+                    setLocation(x + 2, y);
+                }
+            }
         }
-        else{
-     setLocation(x + 2, y);
-    }
-    }
-    }
-    if(Greenfoot.isKeyDown("escape")){
-     World Menu = new mainMenu();
-     Greenfoot.setWorld(Menu);
+        if(Greenfoot.isKeyDown("escape")){
+            World Menu = new mainMenu();
+            Greenfoot.setWorld(Menu);
+        }
     }
     
-   }
     public void clothes() {
         int hat = 0;
         int shirt = 0;
@@ -99,79 +107,85 @@ public class mainChar extends Actor
             shirt = perShirt;
             pants = perPants;
         }*/
-   }
-   public void ward_door(){
-      List<wardrobe_door>objects = getObjectsInRange(100, wardrobe_door.class); 
-      if( objects.isEmpty()){
-          
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World ward = new wardrobe();
-        Greenfoot.setWorld(ward);
-        }
-    }  
-    }public void door_lv1(){
-      List<door_lv1>objects = getObjectsInRange(100, door_lv1.class); 
-      if( objects.isEmpty()){
-          
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World lv1 = new level1();
-        Greenfoot.setWorld(lv1);
-        }
-    }  
     }
+    
+    public void ward_door(){
+        List<wardrobe_door>objects = getObjectsInRange(100, wardrobe_door.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World ward = new wardrobe();
+                Greenfoot.setWorld(ward);
+            }
+        }  
+    }
+   
+    public void door_lv1(){
+        List<door_lv1>objects = getObjectsInRange(100, door_lv1.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1 = new level1_1();
+                Greenfoot.setWorld(lv1);
+            }
+        }  
+    }
+    
     public void door_lv2(){
-      List<door_lv2>objects = getObjectsInRange(100, door_lv2.class); 
-      if( objects.isEmpty()){
+        List<door_lv2>objects = getObjectsInRange(100, door_lv2.class); 
+        if( objects.isEmpty()){
           
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World lv2 = new level2();
-        Greenfoot.setWorld(lv2);
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv2 = new level2();
+                Greenfoot.setWorld(lv2);
+            }
         }
     }
-    }
+    
     public void door_lv3(){
-      List<door_lv3>objects = getObjectsInRange(100, door_lv3.class); 
-      if( objects.isEmpty()){
+        List<door_lv3>objects = getObjectsInRange(100, door_lv3.class); 
+        if( objects.isEmpty()){
           
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World lv3 = new level3();
-        Greenfoot.setWorld(lv3);
-        }
-    }  
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv3 = new level3();
+                Greenfoot.setWorld(lv3);
+            }
+        }  
     }
+    
     public void door_lv4(){
-      List<door_lv4>objects = getObjectsInRange(100, door_lv4.class); 
-      if( objects.isEmpty()){
+        List<door_lv4>objects = getObjectsInRange(100, door_lv4.class); 
+        if( objects.isEmpty()){
           
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World lv4 = new level4();
-        Greenfoot.setWorld(lv4);
-        }
-    }  
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv4 = new level4();
+                Greenfoot.setWorld(lv4);
+            }
+        }  
     }
+    
     public void lob_door(){
-      List<lobby_door>objects = getObjectsInRange(100, lobby_door.class);
-      if( objects.isEmpty()){
+        List<lobby_door>objects = getObjectsInRange(100, lobby_door.class);
+        if( objects.isEmpty()){
           
-    } 
-    else{
-     if(Greenfoot.isKeyDown("e")){
-         World lob = new levelRoom(898, 540);
-        Greenfoot.setWorld(lob);
-        }
-    }  
-  }
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lob = new levelRoom(898, 540);
+                Greenfoot.setWorld(lob);
+            }
+        }  
+    }
 }
-
     
 

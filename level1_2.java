@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class level1_2 extends World
+public class level1_2 extends level1
 {
 
     /**
@@ -16,12 +16,6 @@ public class level1_2 extends World
     public level1_2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1280, 720, 1);
-        addObject(new mainChar(), 1186, 162);
-        addObject(new wallV(), 1250, 720/2);
-        addObject(new wallV(), 29, 720/2);
-        addObject(new wallH(), 1280 / 2 , 690);
-        addObject(new wallH(), 1280 / 2 , 30);
-        addObject(new wallV(), 1250, 720/2);
+        addObject(new mainChar(), 1190, 356);
     }
 }
