@@ -47,6 +47,7 @@ public class mainChar extends Actor
         door_lv2();
         door_lv3();
         door_lv4();
+        lv1_knight();
     }    
     
     public void movements() {
@@ -183,6 +184,18 @@ public class mainChar extends Actor
             if(Greenfoot.isKeyDown("e")){
                 World lob = new levelRoom(898, 540);
                 Greenfoot.setWorld(lob);
+            }
+        }  
+    }
+    public void lv1_knight(){
+        List<lv1_knight>objects = getObjectsInRange(100, lv1_knight.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World hint1 = new lv1_Hint();
+                Greenfoot.setWorld(hint1);
             }
         }  
     }
