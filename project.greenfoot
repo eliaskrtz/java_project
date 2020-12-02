@@ -151,6 +151,7 @@ dependency53.type=UsesDependency
 dependency54.from=backButton
 dependency54.to=mainMenu
 dependency54.type=UsesDependency
+<<<<<<< HEAD
 dependency55.from=optionsButton
 dependency55.to=optionsMenu
 dependency55.type=UsesDependency
@@ -158,6 +159,18 @@ dependency56.from=startButton
 dependency56.to=levelRoom
 dependency56.type=UsesDependency
 dependency6.from=wardrobe
+=======
+dependency55.from=backButton
+dependency55.to=mainMenu
+dependency55.type=UsesDependency
+dependency56.from=optionsButton
+dependency56.to=optionsMenu
+dependency56.type=UsesDependency
+dependency57.from=startButton
+dependency57.to=levelRoom
+dependency57.type=UsesDependency
+dependency6.from=level1_2
+>>>>>>> d52330f3d68edde27c6d9d030b86601af0f51ec6
 dependency6.to=mainChar
 dependency6.type=UsesDependency
 dependency7.from=wardrobe
@@ -169,6 +182,7 @@ dependency8.type=UsesDependency
 dependency9.from=wardrobe
 dependency9.to=lobby_door
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1066
 editor.fx.0.width=1936
 editor.fx.0.x=-8
@@ -176,6 +190,15 @@ editor.fx.0.y=-8
 height=1066
 package.numDependencies=56
 package.numTargets=45
+=======
+editor.fx.0.height=1414
+editor.fx.0.width=2574
+editor.fx.0.x=-7
+editor.fx.0.y=-7
+height=1066
+package.numDependencies=57
+package.numTargets=43
+>>>>>>> d52330f3d68edde27c6d9d030b86601af0f51ec6
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
