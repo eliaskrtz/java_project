@@ -14,7 +14,7 @@ public class lv1_knight extends lv1_objects
      */
     public void act() 
     {
-        // Add your action code here.
+      
     }  
     public lv1_knight ( int laenge, int breite){
       setImage("knight.jpg");
@@ -23,4 +23,5 @@ public class lv1_knight extends lv1_objects
        image.scale(laenge, breite);
        setImage(image);    
     }
+   
 }
