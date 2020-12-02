@@ -13,24 +13,13 @@ public class level1 extends World
      * Constructor for objects of class levelOne.
      * 
      */
-    public level1()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+    public level1()     //das kein Level sondern ein Ausgangspunkt
+    {
         super(1280, 720, 1);
-        addObject(new mainChar(), 1190, 356);
         addObject(new wallV(), 1250, 720/2);
         addObject(new wallV(), 29, 720/2);
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
         addObject(new wallV(), 1250, 720/2);
-       addObject(new door_fake(60, 100), 1251, 720 / 2);
-       addObject(new lv1_table(500, 200), 1280 / 2,720 / 2);
-       addObject(new lv1_knight(60, 60), 264, 97); 
-       addObject(new lv1_crown_chair(100, 100), 187, 237);
-       addObject(new lv1_triangle_chair(100, 100), 761, 123);
-       addObject(new lv1_rectangle_chair(100, 100), 209, 499);
-       addObject(new lv1_pentagon_chair(100, 100), 828, 580);
-       addObject(new lv1_hexagon_chair(100, 100), 1016, 352);
-       addObject(new lv1_heptagon_chair(100, 100), 493, 567);
     }
 }

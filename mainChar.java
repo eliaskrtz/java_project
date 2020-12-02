@@ -17,6 +17,7 @@ public class mainChar extends Actor
     
     public mainChar() {
         setImage(new GreenfootImage("manNormal.jpg")); //createChar()
+        setImage(new GreenfootImage("manNormal.jpg"));
         size = "normal";
     }
     
@@ -53,7 +54,7 @@ public class mainChar extends Actor
             int rot = getRotation();
             int x = getX();
             int y = getY();
-            if (getOneObjectAtOffset(-30, 0, walls.class) == null ) {
+            if (getOneObjectAtOffset(-30, 0, Actor.class) == null ) {
                 if( rot == 0 ){
                     setRotation(180);
                     getImage().mirrorVertically();
@@ -66,14 +67,14 @@ public class mainChar extends Actor
         if( Greenfoot.isKeyDown("w")){
             int y = getY();
             int x = getX();
-            if (getOneObjectAtOffset(0, - 35, walls.class) == null  ) {
+            if (getOneObjectAtOffset(0, - 35, Actor.class) == null  ) {
                 setLocation(x, y - 2);
             }
         }
         if( Greenfoot.isKeyDown("s")){
             int y = getY();
             int x = getX();
-            if (getOneObjectAtOffset(0, 35, walls.class) == null ) {
+            if (getOneObjectAtOffset(0, 35, Actor.class) == null ) {
                setLocation(x, y + 2);
             }
         }
@@ -81,7 +82,7 @@ public class mainChar extends Actor
             int rot = getRotation();
             int x = getX();
             int y = getY();
-            if (getOneObjectAtOffset(30, 0, walls.class) == null ) {    
+            if (getOneObjectAtOffset(30, 0, Actor.class) == null ) {    
                 if( rot == 180 ){
                     setRotation(0);
                     getImage().mirrorVertically();
@@ -128,7 +129,7 @@ public class mainChar extends Actor
         } 
         else{
             if(Greenfoot.isKeyDown("e")){
-                World lv1 = new level1();
+                World lv1 = new level1_1();
                 Greenfoot.setWorld(lv1);
             }
         }  
@@ -184,7 +185,7 @@ public class mainChar extends Actor
                 Greenfoot.setWorld(lob);
             }
         }  
-  }
+    }
 }
     
 
