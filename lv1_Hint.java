@@ -19,11 +19,11 @@ public class lv1_Hint extends level1
         setHint();
     }
     public Actor message = null;
-    public static final Color BLACK;
+    //public static final Color BLACK;
     public void setHint() {
         GreenfootImage image = null;
         String text = "hint";
-        image = new GreenfootImage(text, 28, /*color*/ 1280 / 2, 150);
+        //image = new GreenfootImage(text, 28, Color.BLACK, 1280 / 2, 150);
         message.setImage(image);
     }
  
