@@ -22,19 +22,17 @@ public class level1_2 extends level1
         addObject(new wallV(), 29, 720/2);
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
-        addObject(new wallV(), 1250, 720/2);
         addObject(new lv1_knight(60, 60), 1180, 523);
-        addObject(new wallV(10, 100), 1011, 610);
-        addObject(new wallV(700, 10), 658, 565);
-        addObject(new wallH(10, 100), 313 , 510);
-        addObject(new wallH(10, 200), 1003 , 360);
-        addObject(new wallH(10, 100), 703 , 410);
-        addObject(new wallV(300, 10), 848, 455);
-        addObject(new wallV(300, 10), 458, 456);
-        addObject(new wallV(100, 10), 848, 365);
-        addObject(new wallV(10, 100), 893, 310);
-        addObject(new wallV(10, 100), 1003, 210);
-        addObject(new wallH(10, 200), 1003 , 210);
+        //addObject(new wallH(10, 100), 1005, 610);
+        addObject(new wallV(10, 100), 1005, 610);
+        addObject(new wallV(10, 300), 1005, 310);
+        addObject(new wallH(10, 600), 699, 565);
+        addObject(new wallH(10, 285), 857, 455);
+        addObject(new wallH(10, 215), 507, 455);
+        addObject(new wallV(10, 100), 405, 510);
+        addObject(new wallV(10, 200), 720, 350);
+        addObject(new wallV(10, 200), 610, 350);
+    
     }
     
 }

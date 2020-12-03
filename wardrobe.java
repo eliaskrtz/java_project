@@ -21,8 +21,8 @@ public class wardrobe extends World
         //Aussenwände
         addObject(new wallV(60, 720), 690, 363);
         addObject(new wallV(60, 720), 29, 720/2);
-        addObject(new wallH(720, 60), 382 , 690);
-        addObject(new wallH(720, 60), 418 , 30);
+        addObject(new wallH(60, 720), 382 , 690);
+        addObject(new wallH(60, 720), 418 , 30);
         //Tür zur lobby
         addObject(new lobby_door(60, 720/3), 30, 350);
         //---Initialisierung der Objekte in wardobe---
