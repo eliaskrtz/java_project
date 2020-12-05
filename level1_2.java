@@ -19,6 +19,7 @@ public class level1_2 extends level1
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         addObject(new mainChar(), 1122, 617);
         addObject(new lv1_knight(60, 60), 1180, 523);
+        addObject(new door_lv1_r2_r1(100, 60), 1119, 690); 
         //addObject(new wallH(10, 100), 1005, 610);
         //addObject(new wallV(10, 100), 1005, 610);
         addObject(new wallV(10, 100), 1005, 610);
@@ -35,6 +36,17 @@ public class level1_2 extends level1
         addObject(new wallH(10, 85), 847, 355);
         addObject(new wallH(40, 110), 1165, 224);
         addObject(new wallH(40, 110), 1165, 400);
+        addObject(new wallH(10, 295), 457, 255);
+        addObject(new wallH(40, 55), 318, 355);
+        addObject(new wallV(10, 100), 315, 200);
+        addObject(new wallV(10, 100), 425, 200);
+        addObject(new wallH(10, 120), 369, 145);
+        addObject(new wallV(10, 502), 184, 311);
+        addObject(new wallH(40, 55), 477, 355);
+        addObject(new wallTroll(120, 120), 372, 195);
+        
+        
+        
         
     
     }
