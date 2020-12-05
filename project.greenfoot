@@ -187,11 +187,19 @@ dependency8.type=UsesDependency
 dependency9.from=wardrobe
 dependency9.to=lobby_door
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=1066
+editor.fx.0.width=1936
+editor.fx.0.x=-8
+editor.fx.0.y=-8
+height=1066
+=======
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=2266
 editor.fx.0.y=105
 height=1176
+>>>>>>> 8d201edf829874b3f825c08da9ec325e78380d23
 package.numDependencies=62
 package.numTargets=46
 project.charset=UTF-8
@@ -532,6 +540,6 @@ target9.x=0
 target9.y=0
 version=3.0.0
 width=1936
-world.lastInstantiated=level1_2
+world.lastInstantiated=levelRoom
 xPosition=0
 yPosition=0

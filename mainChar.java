@@ -1,5 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
+import java.awt.*; 
+import java.awt.event.KeyEvent; 
+import java.awt.image.BufferedImage; 
+import javax.swing.JFrame;
+import java.util.ArrayList;
 /**
  * Main Character with all 
  * 
@@ -16,21 +21,20 @@ public class mainChar extends Actor
     public String size = "";  //Variable für mainChar erstellung (klein/normal/groß)
     
     public mainChar() {
-        setImage(new GreenfootImage("manNormal.jpg")); //createChar()
-        setImage(new GreenfootImage("manNormal.jpg"));
+        setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
         size = "normal";
     }
     
     public mainChar(String art) {
         size = art;               //wichtig für mainChar Erstellung
         if (size == "normal") {
-            setImage(new GreenfootImage("manNormal.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
         }
         if (size == "small") {
-            setImage(new GreenfootImage("manSmall.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manSmall.jpg")); //createChar()
         }
         if (size == "big") {
-            setImage(new GreenfootImage("manBig.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manBig.jpg")); //createChar()
         }
     }
     
@@ -100,14 +104,7 @@ public class mainChar extends Actor
     }
     
     public void clothes() {
-        int hat = 0;
-        int shirt = 0;
-        int pants = 0;
-        /*if (chClothes) {            //clothing changes in wardrobe
-            hat = perHat;
-            shirt = perShirt;
-            pants = perPants;
-        }*/
+        //die Dateien müssen unterschiedlich groß sein
     }
     
     public void ward_door(){
