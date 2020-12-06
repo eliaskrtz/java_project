@@ -104,7 +104,7 @@ public class mainChar extends Actor
     }
     
     public void clothes() {
-        //die Dateien müssen unterschiedlich groß sein
+        //die Dateien müssen unterschiedlich groß sein bullshit
     }
     
     public void ward_door(){
