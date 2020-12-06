@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class door_lv1_r2_r1 extends Doors
+public class lv1_room1_2_door extends Doors
 {
     /**
      * Act - do whatever the door_lv1_r2_r1 wants to do. This method is called whenever
@@ -16,9 +16,9 @@ public class door_lv1_r2_r1 extends Doors
     {
         // Add your action code here.
     }
-    public door_lv1_r2_r1(int laenge, int breite) {
+    public lv1_room1_2_door(int laenge, int breite) {
        setImage("redBG.jpg");
-       setRotation(0);
+       setRotation(90);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
        setImage(image);
