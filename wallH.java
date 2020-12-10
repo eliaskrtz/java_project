@@ -23,7 +23,7 @@ public class wallH extends walls
     
     public wallH(int laenge, int breite) {
        setImage("blackBG.jpg");
-       setRotation(0);
+       setRotation(90);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
        setImage(image);

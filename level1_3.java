@@ -16,5 +16,7 @@ public class level1_3 extends level1
     public level1_3()
     {
         addObject(new mainChar(), 1190, 356);
+        addObject(new lv1_room3_1_door(100, 60), 1158, 30);
+        
     }
 }

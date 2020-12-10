@@ -24,7 +24,7 @@ public class levelRoom extends World
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
         //Innenwände
-        addObject(new wallH(280, 30), 1083 , 430);
+        addObject(new wallH(30, 280), 1083 , 430);
         addObject(new wallV(30, 300), 950, 565);
         addObject(new wardrobe_door(30, 100), 950, 547);
         addObject(new door_lv1(60, 100), 30, 305);
@@ -44,7 +44,7 @@ public class levelRoom extends World
         addObject(new wallH(), 1280 / 2 , 690);
         addObject(new wallH(), 1280 / 2 , 30);
         //Innenwände
-        addObject(new wallH(280, 30), 1083 , 430);
+        addObject(new wallH(30, 280), 1083 , 430);
         addObject(new wallV(30, 300), 950, 565);
         addObject(new wardrobe_door(30, 100), 950, 547);
         addObject(new door_lv1(60, 100), 30, 305);

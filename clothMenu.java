@@ -20,5 +20,7 @@ public class clothMenu extends World
         setBackground(new GreenfootImage("greyBG.jpg"));
         addObject(new backgroundImage("lightgrey", 180, 180), 150, 720/2);
         addObject(new mainChar("big"), 150, 720/2);
+        GreenfootImage head = new GreenfootImage("Kopfdesign:", 240, Color.BLACK, new Color(0, 0, 0, 0));
+        //
     }
 }

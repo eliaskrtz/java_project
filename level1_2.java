@@ -17,34 +17,38 @@ public class level1_2 extends level1
     public level1_2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-<<<<<<< HEAD
-        super(1280, 720, 1);
         addObject(new mainChar(), 1122, 617);
-        addObject(new wallV(), 1250, 720/2);
-        addObject(new wallV(), 29, 720/2);
-        addObject(new wallH(), 1280 / 2 , 690);
-        addObject(new wallH(), 1280 / 2 , 30);
-        addObject(new wallV(), 1250, 720/2);
         addObject(new lv1_knight(60, 60), 1180, 523);
-        addObject(new wallV(10, 100), 1011, 610);
-        addObject(new wallV(700, 10), 658, 565);
-        addObject(new wallH(10, 100), 313 , 510);
-        addObject(new wallH(10, 200), 1003 , 360);
-        addObject(new wallH(10, 100), 703 , 410);
-        addObject(new wallV(300, 10), 848, 455);
-        addObject(new wallV(300, 10), 458, 456);
-        addObject(new wallV(100, 10), 848, 365);
-        addObject(new wallV(10, 100), 893, 310);
-        addObject(new wallV(10, 100), 1003, 210);
-        addObject(new wallH(10, 200), 1003 , 210);
+        addObject(new lv1_room2_1_door(60, 100), 1119, 690); 
+        //addObject(new wallH(10, 100), 1005, 610);
+        //addObject(new wallV(10, 100), 1005, 610);
+        addObject(new wallV(10, 100), 1005, 610);
+        addObject(new wallV(10, 310), 1005, 305);
+        addObject(new wallH(10, 600), 699, 565);
+        addObject(new wallH(10, 285), 857, 455);
+        addObject(new wallH(10, 215), 507, 455);
+        addObject(new wallV(10, 100), 405, 510);
+        addObject(new wallV(10, 200), 720, 350);
+        addObject(new wallV(10, 200), 610, 350);
+        addObject(new wallH(10, 175), 812, 255);
+        addObject(new wallV(10, 100), 895, 310);
+        addObject(new wallH(10, 295), 862, 145);
+        addObject(new wallH(10, 85), 847, 355);
+        addObject(new wallH(40, 110), 1165, 224);
+        addObject(new wallH(40, 110), 1165, 400);
+        addObject(new wallH(10, 295), 457, 255);
+        addObject(new wallH(40, 55), 318, 355);
+        addObject(new wallV(10, 100), 315, 200);
+        addObject(new wallV(10, 100), 425, 200);
+        addObject(new wallH(10, 120), 369, 145);
+        addObject(new wallV(10, 502), 184, 311);
+        addObject(new wallH(40, 55), 477, 355);
+        addObject(new wallTroll(120, 120), 372, 195);
+        addObject(new lv1_darkness(), 1190, 386);
         
         
         
-        
-        
-=======
-        addObject(new mainChar(), 1190, 356);
->>>>>>> 1aabb9ef856efbbb1ffabab6f71e5c618f2c7ab7
+    
     }
     
 }

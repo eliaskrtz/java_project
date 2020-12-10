@@ -1,5 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
+import java.awt.*; 
+import java.awt.event.KeyEvent; 
+import java.awt.image.BufferedImage; 
+import javax.swing.JFrame;
+import java.util.ArrayList;
 /**
  * Main Character with all 
  * 
@@ -16,21 +21,20 @@ public class mainChar extends Actor
     public String size = "";  //Variable für mainChar erstellung (klein/normal/groß)
     
     public mainChar() {
-        setImage(new GreenfootImage("manNormal.jpg")); //createChar()
-        setImage(new GreenfootImage("manNormal.jpg"));
+        setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
         size = "normal";
     }
     
     public mainChar(String art) {
         size = art;               //wichtig für mainChar Erstellung
         if (size == "normal") {
-            setImage(new GreenfootImage("manNormal.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
         }
         if (size == "small") {
-            setImage(new GreenfootImage("manSmall.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manSmall.jpg")); //createChar()
         }
         if (size == "big") {
-            setImage(new GreenfootImage("manBig.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manBig.jpg")); //createChar()
         }
     }
     
@@ -48,6 +52,10 @@ public class mainChar extends Actor
         door_lv3();
         door_lv4();
         lv1_knight();
+        lv1_room1_2_door();
+        lv1_room2_1_door();
+        lv1_room1_3_door();
+        lv1_room3_1_door();
     }    
     
     public void movements() {
@@ -99,15 +107,12 @@ public class mainChar extends Actor
         }
     }
     
+    public class player_pos{
+        public int ppX = getX();
+        public int ppY = getY();
+    }
     public void clothes() {
-        int hat = 0;
-        int shirt = 0;
-        int pants = 0;
-        /*if (chClothes) {            //clothing changes in wardrobe
-            hat = perHat;
-            shirt = perShirt;
-            pants = perPants;
-        }*/
+        //die Dateien müssen unterschiedlich groß sein bullshit
     }
     
     public void ward_door(){
@@ -187,18 +192,72 @@ public class mainChar extends Actor
             }
         }  
     }
-    public void lv1_knight(){
+    
+    public void lv1_room1_2_door(){
+        List<lv1_room1_2_door>objects = getObjectsInRange(100, lv1_room1_2_door.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1_2 = new level1_2();
+                Greenfoot.setWorld(lv1_2);
+            }
+        }  
+    }
+    
+    public void lv1_room2_1_door(){
+        List<lv1_room2_1_door>objects = getObjectsInRange(100, lv1_room2_1_door.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1_1 = new level1_1();
+                Greenfoot.setWorld(lv1_1);
+            }
+        }
+     }
+   
+     public void lv1_room1_3_door(){
+        List<lv1_room1_3_door>objects = getObjectsInRange(100, lv1_room1_3_door.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1_3 = new level1_3();
+                Greenfoot.setWorld(lv1_3);
+            }
+        }  
+     }
+     
+     public void lv1_room3_1_door(){
+        List<lv1_room3_1_door>objects = getObjectsInRange(100, lv1_room3_1_door.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1_1 = new level1_1();
+                Greenfoot.setWorld(lv1_1);
+            }
+        }  
+     }
+     
+     public void lv1_knight(){
         List<lv1_knight>objects = getObjectsInRange(100, lv1_knight.class); 
         if( objects.isEmpty()){
           
         } 
         else{
             if(Greenfoot.isKeyDown("e")){
-                World hint1 = new lv1_Hint();
+                World hint1 = new lv1_1_Hint();
                 Greenfoot.setWorld(hint1);
             }
         }  
-    }
+     }
+    
 }
     
 
