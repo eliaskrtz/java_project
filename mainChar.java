@@ -56,6 +56,7 @@ public class mainChar extends Actor
         lv1_room2_1_door();
         lv1_room1_3_door();
         lv1_room3_1_door();
+        tableWardrobe();  //geht noch nicht
     }    
     
     public void movements() {
@@ -219,7 +220,7 @@ public class mainChar extends Actor
         }
      }
    
-     public void lv1_room1_3_door(){
+    public void lv1_room1_3_door(){
         List<lv1_room1_3_door>objects = getObjectsInRange(100, lv1_room1_3_door.class); 
         if( objects.isEmpty()){
           
@@ -230,9 +231,9 @@ public class mainChar extends Actor
                 Greenfoot.setWorld(lv1_3);
             }
         }  
-     }
+    }
      
-     public void lv1_room3_1_door(){
+    public void lv1_room3_1_door(){
         List<lv1_room3_1_door>objects = getObjectsInRange(100, lv1_room3_1_door.class); 
         if( objects.isEmpty()){
           
@@ -243,21 +244,33 @@ public class mainChar extends Actor
                 Greenfoot.setWorld(lv1_1);
             }
         }  
-     }
+    }
      
-     public void lv1_knight(){
+    public void lv1_knight(){
         List<lv1_knight>objects = getObjectsInRange(100, lv1_knight.class); 
         if( objects.isEmpty()){
-          
+        
         } 
         else{
-            if(Greenfoot.isKeyDown("e")){
-                World hint1 = new lv1_1_Hint();
-                Greenfoot.setWorld(hint1);
-            }
+        if(Greenfoot.isKeyDown("e")){
+            World hint1 = new lv1_1_Hint();
+            Greenfoot.setWorld(hint1);
+        }
         }  
-     }
+    }
     
+    public void tableWardrobe() {
+        List<table>objects = getObjectsInRange(100, table.class); 
+        if( objects.isEmpty()){
+        
+        } 
+        else{
+        if(Greenfoot.isKeyDown("e")){
+            World wdm = new clothMenu();
+            Greenfoot.setWorld(wdm);
+        }
+        }
+    }
 }
     
 

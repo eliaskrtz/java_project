@@ -44,10 +44,10 @@ public class lv1_darkness extends lv1_objects
          
         } 
       if( Greenfoot.isKeyDown("d")){
-            int y = player_pos.ppY;
-            int x = player_pos.ppX;
+            //int y = player_pos.ppY;
+            //int x = player_pos.ppX;
           
-                setLocation(x , y);
+                //setLocation(x , y);
             
         }  
     }
