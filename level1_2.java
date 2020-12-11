@@ -44,7 +44,7 @@ public class level1_2 extends level1
         addObject(new wallV(10, 502), 184, 311);
         addObject(new wallH(40, 55), 477, 355);
         addObject(new wallTroll(120, 120), 372, 195);
-        addObject(new lv1_darkness(), 1190, 386);
+        addObject(new lv1_darkness(), 1122, 417);
         
         
         
