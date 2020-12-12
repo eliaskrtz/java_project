@@ -23,6 +23,7 @@ comment2.params=art
 comment2.target=mainChar(java.lang.String)
 comment3.params=
 comment3.target=void\ act()
+comment3.text=public\ mainChar(String\ art,\ String\ outfit)\ {\r\n\ \ \ \ \ \ \ \ size\ \=\ art;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //wichtig\ f\u00FCr\ mainChar\ Erstellung\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "normal"\ &&\ outfit\ \=\ "outfit1")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manNormal.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "small")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manSmall.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "big")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manBig.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n}
 comment4.params=
 comment4.target=void\ movements()
 comment5.params=

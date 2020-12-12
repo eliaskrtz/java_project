@@ -38,6 +38,19 @@ public class mainChar extends Actor
         }
     }
     
+  /*public mainChar(String art, String outfit) {
+        size = art;               //wichtig für mainChar Erstellung
+        if (size == "normal" && outfit = "outfit1") {
+            setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
+        }
+        if (size == "small") {
+            setImage(new GreenfootImage("/mainChar/manSmall.jpg")); //createChar()
+        }
+        if (size == "big") {
+            setImage(new GreenfootImage("/mainChar/manBig.jpg")); //createChar()
+        }
+    } */
+    
     public void act() 
     {
         //Abfrgae zur Größe des mainChars und deren movement
@@ -260,8 +273,8 @@ public class mainChar extends Actor
     }
     
     public void tableWardrobe() {
-        List<table>objects = getObjectsInRange(100, table.class); 
-        if( objects.isEmpty()){
+        List<table>objects = getObjectsInRange(200, table.class); 
+        if(objects.isEmpty()){
         
         } 
         else{
