@@ -14,13 +14,36 @@ public class lv1_darkness extends lv1_objects
      */
     public void act() 
     {
-        movements();
-        aussehen();
+     aussehen();
+     java.util.List actors = getWorld().getObjects(mainChar.class);
+     mainChar actor = (mainChar)actors.get(0);   
+     if(Greenfoot.isKeyDown("a")){
+            int x = actor.getX();
+            int y = actor.getY();
+            setLocation(x - 2, y - 200);
+            }
+     if(Greenfoot.isKeyDown("d")){ 
+            int x = actor.getX();
+            int y = actor.getY();
+            setLocation(x + 2, y - 200);
+            }
+     if(Greenfoot.isKeyDown("w")){ 
+            int x = actor.getX();
+            int y = actor.getY();
+            setLocation(x, y - 2 - 200);
+            }
+     if(Greenfoot.isKeyDown("s")){ 
+            int x = actor.getX();
+            int y = actor.getY();
+            setLocation(x, y + 2 - 200);
+            }
     }
     
     public void aussehen(){
       setImage("blackBG.jpg");
     }
+<<<<<<< HEAD
+=======
     public void movements(){
       if( Greenfoot.isKeyDown("w")){
             int y = getY();
@@ -51,4 +74,6 @@ public class lv1_darkness extends lv1_objects
             
         }  
     }
+>>>>>>> f05a1aad37721535bc455442dbe926edb1606147
 }
+
