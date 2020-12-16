@@ -42,38 +42,6 @@ public class lv1_darkness extends lv1_objects
     public void aussehen(){
       setImage("blackBG.jpg");
     }
-<<<<<<< HEAD
-=======
-    public void movements(){
-      if( Greenfoot.isKeyDown("w")){
-            int y = getY();
-            int x = getX();
-            
-                setLocation(x, y );
-            
-        }
-      if( Greenfoot.isKeyDown("a")){
-            int y = getY();
-            int x = getX();
-            
-                setLocation(x , y);
-        
-        }
-      if( Greenfoot.isKeyDown("s")){
-            int y = getY();
-            int x = getX();
-           
-                setLocation(x, y );
-         
-        } 
-      if( Greenfoot.isKeyDown("d")){
-            //int y = player_pos.ppY;
-            //int x = player_pos.ppX;
-          
-                //setLocation(x , y);
-            
-        }  
-    }
->>>>>>> f05a1aad37721535bc455442dbe926edb1606147
+    
 }
 

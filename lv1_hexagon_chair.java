@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.List;
 /**
  * Write a description of class lv1_hexagon_chair here.
  * 
@@ -13,9 +13,21 @@ public class lv1_hexagon_chair extends lv1_objects
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
-    {
-        // Add your action code here.
-    }  
+    { 
+        List<mainChar>objects = getObjectsInRange(86, mainChar.class);
+        java.util.List actors = getWorld().getObjects(mainChar.class);
+        mainChar actor = (mainChar)actors.get(0);
+        int x = actor.getX();
+        int y = actor.getY()- 90;
+           
+                if(Greenfoot.isKeyDown("shift")){
+        if(objects.isEmpty() ){
+            
+        }
+        else{if(Greenfoot.isKeyDown("w")){setLocation(x, y - 2 );}}
+           
+    }
+    }
     public lv1_hexagon_chair (int laenge, int breite){
      setImage("hexagon.png"); 
       setRotation(0);

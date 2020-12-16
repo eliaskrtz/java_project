@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=mainChar
-comment0.text=\r\n\ Main\ Character\ with\ all\ \r\n\ \r\n\ \ \r\n\ \r\n
+comment0.text=\n\ Main\ Character\ with\ all\ \n\ \n\ \ \n\ \n
 comment1.params=
 comment1.target=mainChar()
 comment10.params=
@@ -23,7 +23,7 @@ comment2.params=art
 comment2.target=mainChar(java.lang.String)
 comment3.params=
 comment3.target=void\ act()
-comment3.text=public\ mainChar(String\ art,\ String\ outfit)\ {\r\n\ \ \ \ \ \ \ \ size\ \=\ art;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //wichtig\ f\u00FCr\ mainChar\ Erstellung\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "normal"\ &&\ outfit\ \=\ "outfit1")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manNormal.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "small")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manSmall.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "big")\ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manBig.jpg"));\ //createChar()\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment3.text=public\ mainChar(String\ art,\ String\ outfit)\ {\n\ \ \ \ \ \ \ \ size\ \=\ art;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //wichtig\ f\u00FCr\ mainChar\ Erstellung\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "normal"\ &&\ outfit\ \=\ "outfit1")\ {\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manNormal.jpg"));\ //createChar()\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "small")\ {\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manSmall.jpg"));\ //createChar()\n\ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ if\ (size\ \=\=\ "big")\ {\n\ \ \ \ \ \ \ \ \ \ \ \ setImage(new\ GreenfootImage("/mainChar/manBig.jpg"));\ //createChar()\n\ \ \ \ \ \ \ \ }\n}
 comment4.params=
 comment4.target=void\ movements()
 comment5.params=
