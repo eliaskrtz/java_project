@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=shelf
-comment0.text=\n\ interacting\ with\ this\ \:\ extra\ menu\ to\ change\ characters\ clothes\n\ \n\ \n\ \n
+comment0.text=\r\n\ interacting\ with\ this\ \:\ extra\ menu\ to\ change\ characters\ clothes\r\n\ \r\n\ \r\n\ \r\n
 comment1.params=laenge\ breite
 comment1.target=shelf(int,\ int)
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ shelf\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ shelf\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment2.params=
 comment2.target=void\ act()
 numComments=3
