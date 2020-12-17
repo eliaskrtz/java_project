@@ -18,25 +18,55 @@ public class mainChar extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public String size = "";  //Variable für mainChar erstellung (klein/normal/groß)
+    public String size = "";  //Variable für mainChar erstellung (normal/groß)
     
     public mainChar() {
-        setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
+        setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
         size = "normal";
     }
     
     public mainChar(String art) {
         size = art;               //wichtig für mainChar Erstellung
         if (size == "normal") {
-            setImage(new GreenfootImage("/mainChar/manNormal.jpg")); //createChar()
-        }
-        if (size == "small") {
-            setImage(new GreenfootImage("/mainChar/manSmall.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
         }
         if (size == "big") {
-            setImage(new GreenfootImage("/mainChar/manBig.jpg")); //createChar()
+            setImage(new GreenfootImage("/mainChar/manBig/zero.png")); //createChar()
         }
     }
+    
+    public mainChar(String art, int outfit) {
+        size = art;               //wichtig für mainChar Erstellung
+        //outfit = getWorld().getObjects(arrowLeft.class).get(0).getOutfit();
+        if (size == "normal") {
+            if (outfit == 0) {
+                //setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
+            };
+            if (outfit == 1) {
+                //setImage(new GreenfootImage("/mainChar/manNormal/one.png")); //createChar()
+            };
+            if (outfit == 2) {
+                //setImage(new GreenfootImage("/mainChar/manNormal/two.png")); //createChar()
+            };
+            if (outfit == 3) {
+                //setImage(new GreenfootImage("/mainChar/manNormal/three.png")); //createChar()
+            };
+        }
+        if (size == "big") {
+            if (outfit == 0) {
+                setImage(new GreenfootImage("/mainChar/manBig/zero.png")); //createChar()
+            };
+            if (outfit == 1) {
+                setImage(new GreenfootImage("/mainChar/manBig/one.png")); //createChar()
+            };
+            if (outfit == 2) {
+                setImage(new GreenfootImage("/mainChar/manBig/two.png")); //createChar()
+            };
+            if (outfit == 3) {
+                setImage(new GreenfootImage("/mainChar/manBig/three.png")); //createChar()
+            };
+        }
+    } 
     
     public void act() 
     {
@@ -56,6 +86,8 @@ public class mainChar extends Actor
         lv1_room2_1_door();
         lv1_room1_3_door();
         lv1_room3_1_door();
+        
+        tableWardrobe();  //geht noch nicht
     }    
     
     public void movements() {
@@ -63,7 +95,7 @@ public class mainChar extends Actor
             int rot = getRotation();
             int x = getX();
             int y = getY();
-            if (getOneObjectAtOffset(-30, 0, Actor.class) == null ) {
+            if (getOneObjectAtOffset(-35, 0, Actor.class) == null ) {
                 if( rot == 0 ){
                     setRotation(180);
                     getImage().mirrorVertically();
@@ -83,7 +115,7 @@ public class mainChar extends Actor
         if( Greenfoot.isKeyDown("s")){
             int y = getY();
             int x = getX();
-            if (getOneObjectAtOffset(0, 35, Actor.class) == null ) {
+            if (getOneObjectAtOffset(0, 30, Actor.class) == null ) {
                setLocation(x, y + 2);
             }
         }
@@ -219,7 +251,7 @@ public class mainChar extends Actor
         }
      }
    
-     public void lv1_room1_3_door(){
+    public void lv1_room1_3_door(){
         List<lv1_room1_3_door>objects = getObjectsInRange(100, lv1_room1_3_door.class); 
         if( objects.isEmpty()){
           
@@ -230,9 +262,9 @@ public class mainChar extends Actor
                 Greenfoot.setWorld(lv1_3);
             }
         }  
-     }
+    }
      
-     public void lv1_room3_1_door(){
+    public void lv1_room3_1_door(){
         List<lv1_room3_1_door>objects = getObjectsInRange(100, lv1_room3_1_door.class); 
         if( objects.isEmpty()){
           
@@ -243,21 +275,34 @@ public class mainChar extends Actor
                 Greenfoot.setWorld(lv1_1);
             }
         }  
-     }
+    }
      
-     public void lv1_knight(){
+    public void lv1_knight(){
         List<lv1_knight>objects = getObjectsInRange(100, lv1_knight.class); 
         if( objects.isEmpty()){
-          
+        
         } 
         else{
-            if(Greenfoot.isKeyDown("e")){
-                World hint1 = new lv1_1_Hint();
-                Greenfoot.setWorld(hint1);
-            }
+        if(Greenfoot.isKeyDown("e")){
+            World hint1 = new lv1_1_Hint();
+            Greenfoot.setWorld(hint1);
+        }
         }  
-     }
+    }
     
+    public void tableWardrobe() {
+        List<table>objects = getObjectsInRange(200, table.class); 
+        if(objects.isEmpty()){
+        
+        } 
+        else{
+        if(Greenfoot.isKeyDown("e")){
+            World wdm = new clothMenu();
+            Greenfoot.setWorld(wdm);
+        }
+        }
+    }
+     
 }
     
 
