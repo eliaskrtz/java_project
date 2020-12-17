@@ -1,3 +1,4 @@
+;
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -8,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class arrowLeft extends wardrobe_objects
 {
+    public int c = 0;
     /**
      * Act - do whatever the arrowLeft wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -22,11 +24,22 @@ public class arrowLeft extends wardrobe_objects
     public void act() 
     {
         if(Greenfoot.mouseClicked(this)){
-            //voheriges Design-Bild
+            if(Greenfoot.mouseClicked(this)){
+            if (c != 0) {
+                c--;
+            } else c = 3;
+            getWorld().removeObjects(getWorld().getObjects(mainChar.class));
+            getWorld().addObject(new mainChar("big", c), 720/2, 720/2);
+        }
         }
         if(Greenfoot.isKeyDown("escape")){
             World wd = new wardrobe(/*ppX beim klicken, ppY beim klicken*/);
             Greenfoot.setWorld(wd);
         }
-    }    
+    }
+    
+    public int setOutfit() {
+        int a = c;
+        return a;
+    }
 }
