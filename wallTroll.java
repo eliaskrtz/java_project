@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class wallTroll extends walls
+public class wallTroll extends wall
 {
     /**
      * Act - do whatever the wallTroll wants to do. This method is called whenever
@@ -15,7 +15,7 @@ public class wallTroll extends walls
     public void act() 
     {
         // Add your action code here.
-    }
+    }  
     public wallTroll() {
        setImage("frog.png");
        setRotation(0);

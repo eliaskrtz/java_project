@@ -1,19 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class wall here.
+ * Write a description of class wallV here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class wallV extends walls
+public class wallV extends wall
 {
     /**
-     * Act - do whatever the wall wants to do. This method is called whenever
+     * Act - do whatever the wallV wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    public wallV() {
+    public void act() 
+    {
+        // Add your action code here.
+    }
+     public wallV() {
        setImage("blackBG.jpg");
        setRotation(90);
        GreenfootImage image = getImage();  
@@ -28,9 +31,4 @@ public class wallV extends walls
        image.scale(laenge, breite);
        setImage(image);
     }
-    
-    public void act() 
-    {
-       
-    }    
 }

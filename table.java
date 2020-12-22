@@ -6,13 +6,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class table extends wardrobe_objects
+public class table extends wardrobe_object
 {
     /**
      * Act - do whatever the table wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    public void act() 
+    {
+        // Add your action code here.
+    }  
     public table(int laenge, int breite) {
        setImage("schrankWD.jpg");
        setRotation(0);
@@ -20,9 +23,4 @@ public class table extends wardrobe_objects
        image.scale(laenge, breite);
        setImage(image);
     }
-    
-    public void act() 
-    {
-        // Add your action code here.
-    }    
 }

@@ -1,4 +1,3 @@
-;
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
@@ -7,8 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class arrowLeft extends wardrobe_objects
+public class arrowLeft extends wardrobe_object
 {
+    /**
+     * Act - do whatever the arrowLeft wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
     public int c = 0;
     /**
      * Act - do whatever the arrowLeft wants to do. This method is called whenever
@@ -41,5 +44,5 @@ public class arrowLeft extends wardrobe_objects
     public int setOutfit() {
         int a = c;
         return a;
-    }
+    }   
 }

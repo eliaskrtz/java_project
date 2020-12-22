@@ -1,18 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lv3_ here.
+ * Write a description of class painting_2 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class painting_2 extends lv1_3_paintings
+public class painting_2 extends lv1_3_painting
 {
     /**
-     * Act - do whatever the lv3_ wants to do. This method is called whenever
+     * Act - do whatever the painting_2 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
+    public void act() 
+    {
+        // Add your action code here.
+    } 
     public painting_2() {
        setImage("red.png");
        setRotation(0);
@@ -20,9 +23,4 @@ public class painting_2 extends lv1_3_paintings
        image.scale(111, 10);
        setImage(image);
     }
-    
-    public void act() 
-    {
-        // Add your action code here.
-    }    
 }
