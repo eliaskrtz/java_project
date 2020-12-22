@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class arrowRight extends wardrobe_objects
+public class WDarrowRight extends wardrobe_objects
 {
     public int c = 0;
     /**
@@ -14,7 +14,7 @@ public class arrowRight extends wardrobe_objects
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public arrowRight(int hoehe, int breite) {
+    public WDarrowRight(int hoehe, int breite) {
         setImage("/mainChar/clothMenuTexts/arrowRight.png");
         GreenfootImage arRight = getImage();
         arRight.scale(hoehe, breite);

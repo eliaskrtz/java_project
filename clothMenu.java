@@ -22,8 +22,7 @@ public class clothMenu extends World
         //creating Objects
         addObject(new backgroundImage("lightgrey", 180, 180), 720/2, 720/2);
         addObject(new mainChar("big"), 720/2, 720/2);
-        addObject(new arrowRight(70, 70), 489, 720/2);
-        addObject(new arrowLeft(70, 70), 230, 720/2);
+        addObject(new WDarrowRight(70, 70), 489, 720/2);
         addObject(new wdCommitBut(), 360, 555);
     }
 }
