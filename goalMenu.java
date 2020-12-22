@@ -17,9 +17,8 @@ public class goalMenu extends World
         {  
         super(1280, 720, 1);
         setBackground(new GreenfootImage("greyBG.jpg"));
-        addObject(new logo(), 1280/2, 120);
+        addObject(new congrats_1(), 1280/2, 120);
         addObject(new startButton(), 1280/2, 260);
-        addObject(new optionsButton(), 1280/2, 400);
       
     } 
     }

@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class painting_4 extends lv3_paintings
+public class painting_4 extends lv1_3_paintings
 {
     /**
      * Act - do whatever the painting_4 wants to do. This method is called whenever

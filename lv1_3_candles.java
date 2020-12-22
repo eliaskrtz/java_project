@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lv3_knight here.
+ * Write a description of class lv1_3_candles here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class lv3_knight extends lv3_objects
+public class lv1_3_candles extends lv1_3_objects
 {
     /**
-     * Act - do whatever the lv3_knight wants to do. This method is called whenever
+     * Act - do whatever the lv1_3_candles wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
@@ -17,11 +17,12 @@ public class lv3_knight extends lv3_objects
         // Add your action code here.
     }
     
-    public lv3_knight ( int laenge, int breite){
-      setImage("knight.jpg");
+    public lv1_3_candles (int laenge, int breite) {
+        setImage("candle.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
-       setImage(image);    
+       setImage(image);
     }
+    
 }
