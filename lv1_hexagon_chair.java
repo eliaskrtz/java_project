@@ -14,7 +14,7 @@ public class lv1_hexagon_chair extends lv1_objects
      */
     public void act() 
     { 
-        List<mainChar>objects = getObjectsInRange(86, mainChar.class);
+        List<mainChar>objects = getObjectsInRange(100, mainChar.class);
         java.util.List actors = getWorld().getObjects(mainChar.class);
         mainChar actor = (mainChar)actors.get(0);
         int x = actor.getX();
@@ -24,7 +24,20 @@ public class lv1_hexagon_chair extends lv1_objects
         if(objects.isEmpty() ){
             
         }
-        else{if(Greenfoot.isKeyDown("w")){setLocation(x, y - 2 );}}
+        else{
+            if(Greenfoot.isKeyDown("w")){
+            setLocation(x, y - 2 );
+           }
+           if(Greenfoot.isKeyDown("s")){
+            setLocation(x, y + 2 );
+           }
+           if(Greenfoot.isKeyDown("a")){
+            setLocation(x - 2, y  );
+           }
+           if(Greenfoot.isKeyDown("d")){
+            setLocation(x + 2, y  );
+           }
+        }
            
     }
     }
