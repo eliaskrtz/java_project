@@ -86,6 +86,7 @@ public class mainChar extends Actor
         lv1_room2_1_door();
         lv1_room1_3_door();
         lv1_room3_1_door();
+        lv1_room3_goal();
         
         tableWardrobe();  //geht noch nicht
     }    
@@ -276,7 +277,20 @@ public class mainChar extends Actor
             }
         }  
     }
-     
+    
+    public void lv1_room3_goal() {
+        List<lv1_room3_goal>objects = getObjectsInRange(100, lv1_room3_goal.class); 
+        if( objects.isEmpty()){
+          
+        } 
+        else{
+            if(Greenfoot.isKeyDown("e")){
+                World lv1_g = new goalMenu();
+                Greenfoot.setWorld(lv1_g);
+            }
+        }  
+    }
+    
     public void lv1_knight(){
         List<lv1_knight>objects = getObjectsInRange(100, lv1_knight.class); 
         if( objects.isEmpty()){
@@ -302,7 +316,11 @@ public class mainChar extends Actor
         }
         }
     }
-     
+    
+    
+    
 }
+        
+
     
 
