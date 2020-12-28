@@ -42,7 +42,7 @@ public class lv1_crown_chair extends lv1_1_object
     }  
     }   
     public lv1_crown_chair (int laenge, int breite){
-     setImage("crown.jpg"); 
+     setImage("/level_1/crown.jpg"); 
       setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

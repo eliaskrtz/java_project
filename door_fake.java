@@ -17,7 +17,7 @@ public class door_fake extends Doors
        
     } 
     public door_fake(int laenge , int breite ){
-     setImage("redBG.jpg");
+       setImage("/backgrounds/redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

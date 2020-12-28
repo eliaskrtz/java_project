@@ -17,7 +17,7 @@ public class wallTroll extends wall
         // Add your action code here.
     }  
     public wallTroll() {
-       setImage("frog.png");
+       setImage("/backgrounds/frog.png");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(1280, 60);
@@ -25,7 +25,7 @@ public class wallTroll extends wall
     }
     
     public wallTroll(int laenge, int breite) {
-       setImage("frog.png");
+       setImage("/backgrounds/frog.png");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

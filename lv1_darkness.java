@@ -40,6 +40,6 @@ public class lv1_darkness extends lv1_1_object
     }
     
     public void aussehen(){
-      setImage("blackBG.jpg");
+      setImage("/backgrounds/blackBG.jpg");
     } 
 }

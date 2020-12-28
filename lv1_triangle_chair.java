@@ -42,7 +42,7 @@ public class lv1_triangle_chair extends lv1_1_object
     }
     } 
     public lv1_triangle_chair (int laenge, int breite){
-     setImage("triangle.png"); 
+     setImage("/level_1/triangle.png"); 
       setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

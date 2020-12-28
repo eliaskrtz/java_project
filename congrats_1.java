@@ -13,7 +13,7 @@ public class congrats_1 extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
   public congrats_1() {
-       setImage(new GreenfootImage("congratulations_1.png"));
+       setImage(new GreenfootImage("/level_1/congratulations_1.png"));
     }    
     
   public void act() 

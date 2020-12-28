@@ -16,7 +16,7 @@ public class mainMenu extends World
     public mainMenu()
     {  
         super(1280, 720, 1);
-        setBackground(new GreenfootImage("greyBG.jpg"));
+        setBackground(new GreenfootImage("/backgrounds/greyBG.jpg"));
         addObject(new logo(), 1280/2, 120);
         addObject(new startButton(), 1280/2, 260);
         addObject(new optionsButton(), 1280/2, 400);

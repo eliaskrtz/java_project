@@ -41,7 +41,7 @@ public class lv1_pentagon_chair extends lv1_1_object
     }
     }
     public lv1_pentagon_chair (int laenge, int breite){
-     setImage("pentagon.jpg"); 
+     setImage("/level_1/pentagon.jpg"); 
       setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
