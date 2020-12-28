@@ -38,8 +38,11 @@ public class WDarrowRight extends wardrobe_object
         }
     } 
     
-    public int setOutfit() {
+    public int getOutfit() {
         int a = c;
+        if (a != 0 || a != 1 || a != 2 || a != 3) {
+            a = 0;
+        } else a = c;
         return a;
     }
 }
