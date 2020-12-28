@@ -17,7 +17,7 @@ public class table extends wardrobe_object
         // Add your action code here.
     }  
     public table(int laenge, int breite) {
-       setImage("schrankWD.jpg");
+       setImage("/wardrobe/schrankWD.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

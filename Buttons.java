@@ -14,7 +14,7 @@ public class Buttons extends Actor
      */
     
     public Buttons(){
-        setImage("blackBG.jpg");
+        setImage("/backgrounds/blackBG.jpg");
         setRotation(0);
         GreenfootImage image = getImage();  
         image.scale(300, 80);

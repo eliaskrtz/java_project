@@ -17,7 +17,7 @@ public class wallV extends wall
         // Add your action code here.
     }
      public wallV() {
-       setImage("blackBG.jpg");
+       setImage("/backgrounds/blackBG.jpg");
        setRotation(90);
        GreenfootImage image = getImage();  
        image.scale(600, 60);
@@ -25,7 +25,7 @@ public class wallV extends wall
     }
     
     public wallV(int laenge, int breite) {
-       setImage("blackBG.jpg");
+       setImage("/backgrounds/blackBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

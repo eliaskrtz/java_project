@@ -42,7 +42,7 @@ public class lv1_hexagon_chair extends lv1_1_object
     }
     }
     public lv1_hexagon_chair (int laenge, int breite){
-     setImage("hexagon.png"); 
+     setImage("/level_1/hexagon.png"); 
       setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

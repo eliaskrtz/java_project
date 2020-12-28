@@ -16,7 +16,7 @@ public class levelRoom extends World
     public levelRoom()
     {   
         super(1280, 720, 1); 
-        setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+        setBackground(new GreenfootImage("/backgrounds/grassBGlevelRoom.jpg"));
         //Aussenwände
         addObject(new mainChar(), 1280/2, 720/2);
         addObject(new wallV(), 1250, 720/2);
@@ -36,7 +36,7 @@ public class levelRoom extends World
     public levelRoom(int ppX, int ppY)
     {   
         super(1280, 720, 1); 
-        setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+        setBackground(new GreenfootImage("/backgrounds/grassBGlevelRoom.jpg"));
         //Aussenwände
         addObject(new mainChar(), ppX, ppY);
         addObject(new wallV(), 1250, 720/2);

@@ -17,7 +17,7 @@ public class painting_2 extends lv1_3_painting
         // Add your action code here.
     } 
     public painting_2() {
-       setImage("red.png");
+       setImage("/level_1/red.png");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(111, 10);

@@ -17,7 +17,7 @@ public class shelf extends wardrobe_object
         // Add your action code here.
     } 
     public shelf(int laenge, int breite) {
-       setImage("schrankWD.jpg");
+       setImage("/wardrobe/schrankWD.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

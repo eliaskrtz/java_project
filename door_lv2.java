@@ -17,7 +17,7 @@ public class door_lv2 extends Doors
         // Add your action code here.
     }   
     public door_lv2(int laenge, int breite) {
-       setImage("redBG.jpg");
+       setImage("/backgrounds/redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
