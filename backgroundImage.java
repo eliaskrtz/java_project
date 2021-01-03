@@ -15,14 +15,14 @@ public class backgroundImage extends backgrounds
     
     public backgroundImage(String color, int laenge, int breite) {
         if (color == "grey") {
-            setImage("greyBG.jpg");
+            setImage("/backgrounds/greyBG.jpg");
             setRotation(0);
             GreenfootImage image = getImage();  
             image.scale(laenge, breite);
             setImage(image);
         }
         if (color == "lightgrey") {
-            setImage("lightGreyBG.jpg");
+            setImage("/backgrounds/lightGreyBG.jpg");
             setRotation(0);
             GreenfootImage image = getImage();  
             image.scale(laenge, breite);

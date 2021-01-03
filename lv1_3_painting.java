@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class lv2_objects here.
+ * Write a description of class lv1_3_painting here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class lv1_3_objects extends levelRoom_objects
+public class lv1_3_painting extends lv1_3_object
 {
     /**
-     * Act - do whatever the lv2_objects wants to do. This method is called whenever
+     * Act - do whatever the lv1_3_painting wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

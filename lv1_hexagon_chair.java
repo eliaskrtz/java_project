@@ -6,7 +6,7 @@ import java.util.List;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class lv1_hexagon_chair extends lv1_objects
+public class lv1_hexagon_chair extends lv1_1_object
 {
     /**
      * Act - do whatever the lv1_hexagon_chair wants to do. This method is called whenever
@@ -14,7 +14,7 @@ public class lv1_hexagon_chair extends lv1_objects
      */
     public void act() 
     { 
-        List<mainChar>objects = getObjectsInRange(86, mainChar.class);
+        List<mainChar>objects = getObjectsInRange(100, mainChar.class);
         java.util.List actors = getWorld().getObjects(mainChar.class);
         mainChar actor = (mainChar)actors.get(0);
         int x = actor.getX();
@@ -24,15 +24,28 @@ public class lv1_hexagon_chair extends lv1_objects
         if(objects.isEmpty() ){
             
         }
-        else{if(Greenfoot.isKeyDown("w")){setLocation(x, y - 2 );}}
+        else{
+            if(Greenfoot.isKeyDown("w")){
+            setLocation(x, y - 2 );
+           }
+           if(Greenfoot.isKeyDown("s")){
+            setLocation(x, y + 2 );
+           }
+           if(Greenfoot.isKeyDown("a")){
+            setLocation(x - 2, y  );
+           }
+           if(Greenfoot.isKeyDown("d")){
+            setLocation(x + 2, y  );
+           }
+        }
            
     }
     }
     public lv1_hexagon_chair (int laenge, int breite){
-     setImage("hexagon.png"); 
+     setImage("/level_1/hexagon.png"); 
       setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
        setImage(image); 
-    }
+    }   
 }

@@ -17,7 +17,7 @@ public class wardrobe_door extends Doors
         
     }   
     public wardrobe_door(int laenge, int breite) {
-       setImage("redBG.jpg");
+       setImage("/backgrounds/redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);

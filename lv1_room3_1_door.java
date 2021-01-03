@@ -18,8 +18,8 @@ public class lv1_room3_1_door extends Doors
     } 
     
     public lv1_room3_1_door(int laenge, int breite) {
-       setImage("redBG.jpg");
-       setRotation(0);
+       setImage("/backgrounds/redBG.jpg");
+       setRotation(90);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
        setImage(image);

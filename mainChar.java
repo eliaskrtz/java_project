@@ -5,12 +5,9 @@ import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage; 
 import javax.swing.JFrame;
 import java.util.ArrayList;
-/**
- * Main Character with all 
- * 
- *  
- * 
- */
+
+
+
 public class mainChar extends Actor
 {
     /**
@@ -19,31 +16,81 @@ public class mainChar extends Actor
      */
     
     public String size = "";  //Variable für mainChar erstellung (normal/groß)
+    //public int c = getWorld().getObjects(wdCommitBut.class).get(0).getOutfit(); //es geht nicht ich weiss nicht wieso und ich raste gleich aus, junge ich bin so fucking aggressiv!!!11!!!111!11
+    public int c;
+    
+    protected void Outfit() {
+        //c = getWorld().getObjects(WDarrowRight.class).get(0).getOutfit();
+        c = 1;
+    }
     
     public mainChar() {
-        setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
+        //
+        if (c != 0 || c != 1 || c != 2 || c != 3) {
+            c = 0;
+        } else c = c;
+        if (c == 0) {
+            setImage(new GreenfootImage("/mainChar/manNormal/zero.png"));
+        }
+        if (c == 1) {
+            setImage(new GreenfootImage("/mainChar/manNormal/one.png"));
+        }
+        if (c == 2) {
+            setImage(new GreenfootImage("/mainChar/manNormal/two.png"));
+        }
+        if (c == 3) {
+            setImage(new GreenfootImage("/mainChar/manNormal/three.png"));
+        }
         size = "normal";
     }
     
     public mainChar(String art) {
         size = art;               //wichtig für mainChar Erstellung
+        if (c != 0 || c != 1 || c != 2 || c != 3) {
+            c = 0;
+        } else c = c;
         if (size == "normal") {
-            setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
+            if (c == 0) {
+                setImage(new GreenfootImage("/mainChar/manNormal/zero.png"));
+            }
+            if (c == 1) {
+                setImage(new GreenfootImage("/mainChar/manNormal/one.png"));
+            }
+            if (c == 2) {
+                setImage(new GreenfootImage("/mainChar/manNormal/two.png"));
+            }
+            if (c == 3) {
+                setImage(new GreenfootImage("/mainChar/manNormal/three.png"));
+            }
         }
         if (size == "big") {
-            setImage(new GreenfootImage("/mainChar/manBig/zero.png")); //createChar()
+            if (c == 0) {
+                setImage(new GreenfootImage("/mainChar/manBig/zero.png"));
+            }
+            if (c == 1) {
+                setImage(new GreenfootImage("/mainChar/manBig/one.png"));
+            }
+            if (c == 2) {
+                setImage(new GreenfootImage("/mainChar/manBig/two.png"));
+            }
+            if (c == 3) {
+                setImage(new GreenfootImage("/mainChar/manBig/three.png"));
+            }
         }
     }
     
     public mainChar(String art, int outfit) {
         size = art;               //wichtig für mainChar Erstellung
-        //outfit = getWorld().getObjects(arrowLeft.class).get(0).getOutfit();
+        c = outfit;
+        if (c != 0 || c != 1 || c != 2 || c != 3) {
+            c = 0;
+        } else c = c;
         if (size == "normal") {
             if (outfit == 0) {
-                //setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
+                setImage(new GreenfootImage("/mainChar/manNormal/zero.png")); //createChar()
             };
             if (outfit == 1) {
-                //setImage(new GreenfootImage("/mainChar/manNormal/one.png")); //createChar()
+                setImage(new GreenfootImage("/mainChar/manNormal/one.png")); //createChar()
             };
             if (outfit == 2) {
                 //setImage(new GreenfootImage("/mainChar/manNormal/two.png")); //createChar()
@@ -74,7 +121,7 @@ public class mainChar extends Actor
         if (size == "normal"){
             movements();
         }
-        //Methoden fü den Türendurchlauf
+        //Methoden für den Türendurchlauf
         ward_door();
         lob_door();
         door_lv1();
@@ -87,7 +134,6 @@ public class mainChar extends Actor
         lv1_room1_3_door();
         lv1_room3_1_door();
         lv1_room3_goal();
-        
         tableWardrobe();  //geht noch nicht
     }    
     
@@ -96,7 +142,7 @@ public class mainChar extends Actor
             int rot = getRotation();
             int x = getX();
             int y = getY();
-            if (getOneObjectAtOffset(-35, 0, Actor.class) == null ) {
+            if (getOneObjectAtOffset(-35, 0, solidObj.class) == null ) {
                 if( rot == 0 ){
                     setRotation(180);
                     getImage().mirrorVertically();
@@ -109,14 +155,14 @@ public class mainChar extends Actor
         if( Greenfoot.isKeyDown("w")){
             int y = getY();
             int x = getX();
-            if (getOneObjectAtOffset(0, - 35, Actor.class) == null  ) {
+            if (getOneObjectAtOffset(0, - 35, solidObj.class) == null  ) {
                 setLocation(x, y - 2);
             }
         }
         if( Greenfoot.isKeyDown("s")){
             int y = getY();
             int x = getX();
-            if (getOneObjectAtOffset(0, 30, Actor.class) == null ) {
+            if (getOneObjectAtOffset(0, 30, solidObj.class) == null ) {
                setLocation(x, y + 2);
             }
         }
@@ -124,7 +170,7 @@ public class mainChar extends Actor
             int rot = getRotation();
             int x = getX();
             int y = getY();
-            if (getOneObjectAtOffset(30, 0, Actor.class) == null ) {    
+            if (getOneObjectAtOffset(30, 0, solidObj.class) == null ) {    
                 if( rot == 180 ){
                     setRotation(0);
                     getImage().mirrorVertically();
@@ -138,12 +184,9 @@ public class mainChar extends Actor
             World Menu = new mainMenu();
             Greenfoot.setWorld(Menu);
         }
+        
     }
     
-    public class player_pos{
-        public int ppX = getX();
-        public int ppY = getY();
-    }
     public void clothes() {
         //die Dateien müssen unterschiedlich groß sein bullshit
     }

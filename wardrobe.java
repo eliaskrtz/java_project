@@ -16,7 +16,7 @@ public class wardrobe extends World
     public wardrobe()
     {    
         super(720, 720, 1); 
-        setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+        setBackground(new GreenfootImage("/backgrounds/grassBGlevelRoom.jpg"));
         addObject(new mainChar(), 90, 340);
         //Aussenwände
         addObject(new wallV(60, 720), 690, 363);
@@ -34,7 +34,7 @@ public class wardrobe extends World
     public wardrobe(int ppX,int ppY)
     {    
         super(720, 720, 1); 
-        setBackground(new GreenfootImage("grassBGlevelRoom.jpg"));
+        setBackground(new GreenfootImage("/backgrounds/grassBGlevelRoom.jpg"));
         addObject(new mainChar(), ppX, ppY);
         //Aussenwände
         addObject(new wallV(60, 720), 690, 363);

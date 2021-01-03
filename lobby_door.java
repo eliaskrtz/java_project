@@ -16,7 +16,7 @@ public class lobby_door extends Doors
     
     
     public lobby_door(int laenge, int breite) {
-       setImage("redBG.jpg");
+       setImage("/backgrounds/redBG.jpg");
        setRotation(0);
        GreenfootImage image = getImage();  
        image.scale(laenge, breite);
