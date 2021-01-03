@@ -27,5 +27,12 @@ public class level1_1 extends level1
        addObject(new lv1_heptagon_chair(100, 100), 493, 567);
        addObject(new lv1_room1_2_door(60, 100), 126, 30);
        addObject(new lv1_room1_3_door(60, 100), 126, 690);
+       addObject(new lv1_1_crown(200, 200), 990, 720/2);
+       addObject(new lv1_1_triangle(200, 200), 790, 560);
+       addObject(new lv1_1_rectangle(200, 200), 490, 560);
+       addObject(new lv1_1_pentagon(200, 200), 290, 720/2);
+       addObject(new lv1_1_hexagon(200, 200), 490, 160);
+       addObject(new lv1_1_heptagon(200, 200), 790, 160);
     }
+    
 }
